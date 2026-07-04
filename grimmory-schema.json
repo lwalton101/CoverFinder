@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "http://127.0.0.1:45111",
+      "url": "http://booklore.biggarf.com",
       "description": "Generated server url"
     }
   ],
@@ -264,9 +264,7 @@
   "paths": {
     "/api/kobo/{token}/**": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Catch-all for Kobo API",
         "description": "Catch-all endpoint for unhandled Kobo API requests.",
         "operationId": "catchAll",
@@ -293,9 +291,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Catch-all for Kobo API",
         "description": "Catch-all endpoint for unhandled Kobo API requests.",
         "operationId": "catchAll_2",
@@ -322,9 +318,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Catch-all for Kobo API",
         "description": "Catch-all endpoint for unhandled Kobo API requests.",
         "operationId": "catchAll_1",
@@ -351,9 +345,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Catch-all for Kobo API",
         "description": "Catch-all endpoint for unhandled Kobo API requests.",
         "operationId": "catchAll_3",
@@ -380,9 +372,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Catch-all for Kobo API",
         "description": "Catch-all endpoint for unhandled Kobo API requests.",
         "operationId": "catchAll_4",
@@ -411,9 +401,7 @@
     },
     "/api/v2/book-notes/{noteId}": {
       "get": {
-        "tags": [
-          "Book Notes V2"
-        ],
+        "tags": ["Book Notes V2"],
         "summary": "Get a specific note",
         "description": "Retrieve a specific note by its ID.",
         "operationId": "getNoteById",
@@ -443,9 +431,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Book Notes V2"
-        ],
+        "tags": ["Book Notes V2"],
         "summary": "Update a note",
         "description": "Update an existing note's content or color.",
         "operationId": "updateNote",
@@ -485,9 +471,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Book Notes V2"
-        ],
+        "tags": ["Book Notes V2"],
         "summary": "Delete a note",
         "description": "Delete a specific note by its ID.",
         "operationId": "deleteNote",
@@ -512,9 +496,7 @@
     },
     "/api/v1/users/{userId}/content-restrictions": {
       "get": {
-        "tags": [
-          "Content Restrictions"
-        ],
+        "tags": ["Content Restrictions"],
         "summary": "Get user content restrictions",
         "description": "Retrieve all content restrictions for a specific user",
         "operationId": "getUserRestrictions",
@@ -573,9 +555,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Content Restrictions"
-        ],
+        "tags": ["Content Restrictions"],
         "summary": "Update all content restrictions",
         "description": "Replace all content restrictions for a user",
         "operationId": "updateRestrictions",
@@ -648,9 +628,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Content Restrictions"
-        ],
+        "tags": ["Content Restrictions"],
         "summary": "Add content restriction",
         "description": "Add a new content restriction for a user",
         "operationId": "addRestriction",
@@ -720,9 +698,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Content Restrictions"
-        ],
+        "tags": ["Content Restrictions"],
         "summary": "Delete all user content restrictions",
         "description": "Delete all content restrictions for a user",
         "operationId": "deleteAllRestrictions",
@@ -750,9 +726,7 @@
     },
     "/api/v1/users/{id}": {
       "get": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Get user by ID",
         "description": "Retrieve a user's profile by their ID.",
         "operationId": "getUser",
@@ -792,9 +766,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Update user",
         "description": "Update a user's profile, permissions, and library assignments by their ID. Requires admin.",
         "operationId": "updateUser",
@@ -834,9 +806,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Delete user",
         "description": "Delete a user by their ID. Requires admin.",
         "operationId": "deleteUser",
@@ -861,9 +831,7 @@
     },
     "/api/v1/users/{id}/settings": {
       "put": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Update user settings",
         "description": "Update settings for the current user.",
         "operationId": "updateUserSetting",
@@ -898,9 +866,7 @@
     },
     "/api/v1/users/{id}/profile": {
       "put": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Update user profile",
         "description": "Update a user's profile preferences by their ID. Allowed for admins and the user themself.",
         "operationId": "updateUserProfile",
@@ -942,9 +908,7 @@
     },
     "/api/v1/users/change-user-password": {
       "put": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Change another user's password",
         "description": "Change the password for another user. Requires admin.",
         "operationId": "changeUserPassword",
@@ -974,9 +938,7 @@
     },
     "/api/v1/users/change-password": {
       "put": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Change password",
         "description": "Change the password for the current user.",
         "operationId": "changePassword",
@@ -1006,9 +968,7 @@
     },
     "/api/v1/shelves/{shelfId}": {
       "get": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Get a shelf by ID",
         "description": "Retrieve details of a specific shelf by its ID.",
         "operationId": "getShelf",
@@ -1048,9 +1008,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Update a shelf",
         "description": "Update an existing shelf by its ID.",
         "operationId": "updateShelf",
@@ -1090,9 +1048,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Delete a shelf",
         "description": "Delete a shelf by its ID.",
         "operationId": "deleteShelf",
@@ -1117,9 +1073,7 @@
     },
     "/api/v1/settings": {
       "get": {
-        "tags": [
-          "App Settings"
-        ],
+        "tags": ["App Settings"],
         "summary": "Get application settings",
         "description": "Retrieve all application settings.",
         "operationId": "getAppSettings",
@@ -1137,9 +1091,7 @@
         }
       },
       "put": {
-        "tags": [
-          "App Settings"
-        ],
+        "tags": ["App Settings"],
         "summary": "Update application settings",
         "description": "Update one or more application settings.",
         "operationId": "updateSettings",
@@ -1169,9 +1121,7 @@
     },
     "/api/v1/pdf-annotations/book/{bookId}": {
       "get": {
-        "tags": [
-          "PDF Annotations"
-        ],
+        "tags": ["PDF Annotations"],
         "summary": "Get PDF annotations for a book",
         "description": "Retrieve serialized PDF annotations for a specific book.",
         "operationId": "getAnnotations",
@@ -1217,9 +1167,7 @@
         }
       },
       "put": {
-        "tags": [
-          "PDF Annotations"
-        ],
+        "tags": ["PDF Annotations"],
         "summary": "Save PDF annotations for a book",
         "description": "Save or update serialized PDF annotations for a specific book.",
         "operationId": "saveAnnotations",
@@ -1255,9 +1203,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "PDF Annotations"
-        ],
+        "tags": ["PDF Annotations"],
         "summary": "Delete PDF annotations for a book",
         "description": "Delete all PDF annotations for a specific book.",
         "operationId": "deleteAnnotations",
@@ -1282,9 +1228,7 @@
     },
     "/api/v1/libraries/{libraryId}": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get a library by ID",
         "description": "Retrieve details of a specific library by its ID.",
         "operationId": "getLibrary",
@@ -1324,9 +1268,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Update a library",
         "description": "Update an existing library. Requires admin or manipulation permission.",
         "operationId": "updateLibrary",
@@ -1366,9 +1308,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Delete a library",
         "description": "Delete a library by its ID. Requires admin or manipulation permission.",
         "operationId": "deleteLibrary",
@@ -1400,9 +1340,7 @@
     },
     "/api/v1/libraries/{libraryId}/refresh": {
       "put": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Rescan a library",
         "description": "Rescan a library to refresh its contents. Requires admin or manipulation permission.",
         "operationId": "rescanLibrary",
@@ -1434,9 +1372,7 @@
     },
     "/api/v1/koreader-users/me": {
       "get": {
-        "tags": [
-          "KoReader Users"
-        ],
+        "tags": ["KoReader Users"],
         "summary": "Get current KoReader user",
         "description": "Retrieve the current KoReader user profile.",
         "operationId": "getCurrentUser",
@@ -1454,9 +1390,7 @@
         }
       },
       "put": {
-        "tags": [
-          "KoReader Users"
-        ],
+        "tags": ["KoReader Users"],
         "summary": "Upsert current KoReader user",
         "description": "Create or update the current KoReader user profile.",
         "operationId": "upsertCurrentUser",
@@ -1490,9 +1424,7 @@
     },
     "/api/v1/kobo-settings": {
       "get": {
-        "tags": [
-          "Kobo Settings"
-        ],
+        "tags": ["Kobo Settings"],
         "summary": "Get Kobo sync settings",
         "description": "Retrieve the current user's Kobo sync settings.",
         "operationId": "getSettings",
@@ -1510,9 +1442,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Kobo Settings"
-        ],
+        "tags": ["Kobo Settings"],
         "summary": "Update Kobo settings",
         "description": "Update Kobo sync settings for the current user. Requires sync permission or admin.",
         "operationId": "updateSettings_1",
@@ -1542,9 +1472,7 @@
     },
     "/api/v1/kobo-settings/token": {
       "put": {
-        "tags": [
-          "Kobo Settings"
-        ],
+        "tags": ["Kobo Settings"],
         "summary": "Create or update Kobo token",
         "description": "Create or update the Kobo sync token for the current user. Requires sync permission or admin.",
         "operationId": "createOrUpdateToken",
@@ -1564,9 +1492,7 @@
     },
     "/api/v1/hardcover-sync-settings": {
       "get": {
-        "tags": [
-          "Hardcover Sync Settings"
-        ],
+        "tags": ["Hardcover Sync Settings"],
         "summary": "Get Hardcover sync settings",
         "description": "Retrieve the current user's Hardcover sync settings.",
         "operationId": "getSettings_1",
@@ -1584,9 +1510,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Hardcover Sync Settings"
-        ],
+        "tags": ["Hardcover Sync Settings"],
         "summary": "Update Hardcover sync settings",
         "description": "Update the current user's Hardcover sync settings.",
         "operationId": "updateSettings_2",
@@ -1616,9 +1540,7 @@
     },
     "/api/v1/email/recipients/{id}": {
       "get": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Get an email recipient by ID",
         "description": "Retrieve details of a specific email recipient.",
         "operationId": "getEmailRecipient",
@@ -1648,9 +1570,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Update an email recipient",
         "description": "Update an existing email recipient configuration.",
         "operationId": "updateEmailRecipient",
@@ -1690,9 +1610,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Delete an email recipient",
         "description": "Delete a specific email recipient configuration.",
         "operationId": "deleteEmailRecipient",
@@ -1717,9 +1635,7 @@
     },
     "/api/v1/email/providers/{id}": {
       "get": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Get an email provider by ID",
         "description": "Retrieve details of a specific email provider.",
         "operationId": "getEmailProvider",
@@ -1749,9 +1665,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Update an email provider",
         "description": "Update an existing email provider configuration.",
         "operationId": "updateEmailProvider",
@@ -1791,9 +1705,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Delete an email provider",
         "description": "Delete a specific email provider configuration.",
         "operationId": "deleteEmailProvider",
@@ -1825,9 +1737,7 @@
     },
     "/api/v1/books/{bookId}/viewer-setting": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get viewer settings",
         "description": "Retrieve viewer settings for a specific book file.",
         "operationId": "getBookViewerSettings",
@@ -1867,9 +1777,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Update viewer settings",
         "description": "Update viewer settings for a specific book.",
         "operationId": "updateBookViewerSettings",
@@ -1904,9 +1812,7 @@
     },
     "/api/v1/books/{bookId}/metadata": {
       "put": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Update book metadata",
         "description": "Update metadata for a book. Requires metadata edit permission or admin.",
         "operationId": "updateMetadata",
@@ -1973,9 +1879,7 @@
     },
     "/api/v1/books/{bookId}/content": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get book content",
         "description": "Retrieve the binary content of a book for reading. Supports HTTP Range requests for partial content streaming.",
         "operationId": "getBookContent",
@@ -2026,9 +1930,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Replace book content",
         "description": "Overwrite the primary PDF file for a book with the uploaded content. Used by the document viewer to persist annotation changes.",
         "operationId": "replaceBookContent",
@@ -2065,9 +1967,7 @@
     },
     "/api/v1/books/personal-rating": {
       "put": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Update personal rating",
         "description": "Update the personal rating for one or more books.",
         "operationId": "updatePersonalRating",
@@ -2100,9 +2000,7 @@
     },
     "/api/v1/books/metadata/toggle-field-locks": {
       "put": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Toggle field locks for metadata",
         "description": "Toggle field locks for book metadata. Requires metadata edit permission or admin.",
         "operationId": "toggleFieldLocks",
@@ -2135,9 +2033,7 @@
     },
     "/api/v1/books/metadata/toggle-all-lock": {
       "put": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Toggle all metadata locks",
         "description": "Toggle all metadata locks for books. Requires metadata edit permission or admin.",
         "operationId": "toggleAllMetadata",
@@ -2170,9 +2066,7 @@
     },
     "/api/v1/books/bulk-edit-metadata": {
       "put": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Bulk edit book metadata",
         "description": "Bulk update metadata for multiple books. Requires metadata edit permission or admin.",
         "operationId": "bulkEditMetadata",
@@ -2195,9 +2089,7 @@
     },
     "/api/v1/bookmarks/{bookmarkId}": {
       "get": {
-        "tags": [
-          "Bookmarks"
-        ],
+        "tags": ["Bookmarks"],
         "summary": "Get a specific bookmark",
         "description": "Retrieve a specific bookmark by its ID.",
         "operationId": "getBookmarkById",
@@ -2227,9 +2119,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Bookmarks"
-        ],
+        "tags": ["Bookmarks"],
         "summary": "Update a bookmark",
         "description": "Update an existing bookmark's properties (title, location, color, etc.).",
         "operationId": "updateBookmark",
@@ -2269,9 +2159,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Bookmarks"
-        ],
+        "tags": ["Bookmarks"],
         "summary": "Delete a bookmark",
         "description": "Delete a specific bookmark by its ID.",
         "operationId": "deleteBookmark",
@@ -2296,9 +2184,7 @@
     },
     "/api/v1/authors/{authorId}": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Get author details",
         "description": "Retrieve author details including metadata.",
         "operationId": "getAuthorDetails",
@@ -2328,9 +2214,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Update author",
         "description": "Update author details such as name, description, and ASIN.",
         "operationId": "updateAuthor",
@@ -2372,9 +2256,7 @@
     },
     "/api/v1/app/notebook/entries/{entryId}": {
       "put": {
-        "tags": [
-          "App Notebook"
-        ],
+        "tags": ["App Notebook"],
         "summary": "Update notebook entry",
         "description": "Update an existing notebook entry in the app.",
         "operationId": "appUpdateEntry",
@@ -2421,9 +2303,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "App Notebook"
-        ],
+        "tags": ["App Notebook"],
         "summary": "Delete notebook entry",
         "description": "Delete an existing notebook entry in the app.",
         "operationId": "appDeleteEntry",
@@ -2455,9 +2335,7 @@
     },
     "/api/v1/app/books/{bookId}/status": {
       "put": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Update app book read status",
         "description": "Update the read status of a book from the app interface.",
         "operationId": "appUpdateStatus",
@@ -2491,9 +2369,7 @@
     },
     "/api/v1/app/books/{bookId}/rating": {
       "put": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Update app book rating",
         "description": "Update the personal rating of a book from the app interface.",
         "operationId": "appUpdateRating",
@@ -2527,9 +2403,7 @@
     },
     "/api/v1/app/books/{bookId}/progress": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "operationId": "getBookProgress",
         "parameters": [
           {
@@ -2556,9 +2430,7 @@
         }
       },
       "put": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "operationId": "updateBookProgress",
         "parameters": [
           {
@@ -2590,9 +2462,7 @@
     },
     "/api/v1/annotations/{annotationId}": {
       "get": {
-        "tags": [
-          "Annotations"
-        ],
+        "tags": ["Annotations"],
         "summary": "Get a specific annotation",
         "description": "Retrieve a specific annotation by its ID.",
         "operationId": "getAnnotationById",
@@ -2622,9 +2492,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Annotations"
-        ],
+        "tags": ["Annotations"],
         "summary": "Update an annotation",
         "description": "Update an existing annotation's properties (color, style, note).",
         "operationId": "updateAnnotation",
@@ -2664,9 +2532,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Annotations"
-        ],
+        "tags": ["Annotations"],
         "summary": "Delete an annotation",
         "description": "Delete a specific annotation by its ID.",
         "operationId": "deleteAnnotation",
@@ -2691,9 +2557,7 @@
     },
     "/api/v1/admin/oidc-group-mappings/{id}": {
       "put": {
-        "tags": [
-          "OIDC Group Mappings"
-        ],
+        "tags": ["OIDC Group Mappings"],
         "summary": "Update OIDC group mapping",
         "description": "Update an existing OIDC group mapping by ID.",
         "operationId": "oidcGroupMappingUpdate",
@@ -2732,9 +2596,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "OIDC Group Mappings"
-        ],
+        "tags": ["OIDC Group Mappings"],
         "summary": "Delete OIDC group mapping",
         "description": "Delete an OIDC group mapping by ID.",
         "operationId": "oidcGroupMappingDelete",
@@ -2758,9 +2620,7 @@
     },
     "/api/koreader/syncs/progress": {
       "put": {
-        "tags": [
-          "KoReader"
-        ],
+        "tags": ["KoReader"],
         "summary": "Update KoReader progress",
         "description": "Update reading progress for a book.",
         "operationId": "updateProgress",
@@ -2790,9 +2650,7 @@
     },
     "/api/kobo/{token}/v1/library/{bookId}/state": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get reading state",
         "description": "Retrieve the reading state for a book.",
         "operationId": "getState",
@@ -2821,9 +2679,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Update reading state",
         "description": "Update the reading state for a book.",
         "operationId": "updateState",
@@ -2864,9 +2720,7 @@
     },
     "/api/v2/opds-users": {
       "get": {
-        "tags": [
-          "OPDS Users"
-        ],
+        "tags": ["OPDS Users"],
         "summary": "Get all OPDS users",
         "description": "Retrieve a list of all OPDS users.",
         "operationId": "getUsers",
@@ -2887,9 +2741,7 @@
         }
       },
       "post": {
-        "tags": [
-          "OPDS Users"
-        ],
+        "tags": ["OPDS Users"],
         "summary": "Create OPDS user",
         "description": "Create a new OPDS user.",
         "operationId": "createUser",
@@ -2919,9 +2771,7 @@
     },
     "/api/v2/book-notes": {
       "post": {
-        "tags": [
-          "Book Notes V2"
-        ],
+        "tags": ["Book Notes V2"],
         "summary": "Create a note",
         "description": "Create a new note at a specific location in a book.",
         "operationId": "createNote",
@@ -2951,9 +2801,7 @@
     },
     "/api/v1/tasks/start": {
       "post": {
-        "tags": [
-          "Tasks"
-        ],
+        "tags": ["Tasks"],
         "summary": "Start task",
         "description": "Start a task immediately with the provided task request payload.",
         "operationId": "taskStartTask",
@@ -2983,9 +2831,7 @@
     },
     "/api/v1/shelves": {
       "get": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Get all shelves",
         "description": "Retrieve a list of all shelves.",
         "operationId": "getAllShelves",
@@ -3006,9 +2852,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Create a shelf",
         "description": "Create a new shelf.",
         "operationId": "createShelf",
@@ -3038,9 +2882,7 @@
     },
     "/api/v1/setup": {
       "post": {
-        "tags": [
-          "Setup"
-        ],
+        "tags": ["Setup"],
         "summary": "Setup first user",
         "description": "Provision the initial admin user during setup.",
         "operationId": "setupFirstUser",
@@ -3070,9 +2912,7 @@
     },
     "/api/v1/settings/oidc/test": {
       "post": {
-        "tags": [
-          "App Settings"
-        ],
+        "tags": ["App Settings"],
         "operationId": "testOidcConnection",
         "requestBody": {
           "content": {
@@ -3100,9 +2940,7 @@
     },
     "/api/v1/reviews/book/{bookId}/refresh": {
       "post": {
-        "tags": [
-          "Book Reviews"
-        ],
+        "tags": ["Book Reviews"],
         "summary": "Refresh reviews for a book",
         "description": "Refresh and retrieve reviews for a specific book. Requires metadata edit permission or admin.",
         "operationId": "refreshReviews",
@@ -3137,9 +2975,7 @@
     },
     "/api/v1/reading-sessions": {
       "post": {
-        "tags": [
-          "Reading Sessions"
-        ],
+        "tags": ["Reading Sessions"],
         "summary": "Record a reading session",
         "description": "Receive telemetry from the reader client and persist or log the session.",
         "operationId": "recordReadingSession",
@@ -3165,9 +3001,7 @@
     },
     "/api/v1/libraries": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get all libraries",
         "description": "Retrieve a list of all libraries.",
         "operationId": "getLibraries",
@@ -3188,9 +3022,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Create a library",
         "description": "Create a new library. Requires admin or manipulation permission.",
         "operationId": "createLibrary",
@@ -3220,9 +3052,7 @@
     },
     "/api/v1/libraries/{libraryId}/sidecar/import-all": {
       "post": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Bulk import sidecar for library",
         "description": "Import metadata from all sidecar JSON files in a library",
         "operationId": "bulkImport",
@@ -3266,9 +3096,7 @@
     },
     "/api/v1/libraries/{libraryId}/sidecar/export-all": {
       "post": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Bulk export sidecar for library",
         "description": "Generate sidecar JSON files for all books in a library",
         "operationId": "bulkExport",
@@ -3312,9 +3140,7 @@
     },
     "/api/v1/libraries/scan": {
       "post": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Scan library paths",
         "description": "Scan the provided library paths and return a count of processable files. Requires admin or manipulation permission.",
         "operationId": "scanLibraryPaths",
@@ -3345,9 +3171,7 @@
     },
     "/api/v1/icons": {
       "get": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Get paginated icon names",
         "description": "Retrieve a paginated list of icon names (default 50 per page).",
         "operationId": "getIconNames",
@@ -3389,9 +3213,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Save an SVG icon",
         "description": "Saves an SVG icon to the system.",
         "operationId": "saveSvgIcon",
@@ -3421,9 +3243,7 @@
     },
     "/api/v1/icons/batch": {
       "post": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Save multiple SVG icons",
         "description": "Saves multiple SVG icons to the system in batch.",
         "operationId": "saveBatchSvgIcons",
@@ -3453,9 +3273,7 @@
     },
     "/api/v1/files/upload": {
       "post": {
-        "tags": [
-          "File Upload"
-        ],
+        "tags": ["File Upload"],
         "summary": "Upload a file",
         "description": "Upload a file to a specific library and path. Requires upload permission or admin.",
         "operationId": "uploadFile",
@@ -3493,9 +3311,7 @@
                     "description": "File to upload"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -3516,9 +3332,7 @@
     },
     "/api/v1/files/upload/bookdrop": {
       "post": {
-        "tags": [
-          "File Upload"
-        ],
+        "tags": ["File Upload"],
         "summary": "Upload a book via BookDrop",
         "description": "Upload a book using BookDrop. Requires upload permission or admin.",
         "operationId": "uploadFile_1",
@@ -3534,9 +3348,7 @@
                     "description": "Book file to upload"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -3557,9 +3369,7 @@
     },
     "/api/v1/files/move": {
       "post": {
-        "tags": [
-          "File Move"
-        ],
+        "tags": ["File Move"],
         "summary": "Move files",
         "description": "Bulk move files to a different location within the library.",
         "operationId": "moveFiles",
@@ -3589,9 +3399,7 @@
     },
     "/api/v1/email/recipients": {
       "get": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Get all email recipients",
         "description": "Retrieve a list of all configured email recipients.",
         "operationId": "getEmailRecipients",
@@ -3612,9 +3420,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Create an email recipient",
         "description": "Create a new email recipient configuration.",
         "operationId": "createEmailRecipient",
@@ -3644,9 +3450,7 @@
     },
     "/api/v1/email/providers": {
       "get": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Get all email providers",
         "description": "Retrieve a list of all configured email providers.",
         "operationId": "getEmailProviders",
@@ -3667,9 +3471,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Create an email provider",
         "description": "Create a new email provider configuration.",
         "operationId": "createEmailProvider",
@@ -3699,9 +3501,7 @@
     },
     "/api/v1/email/book": {
       "post": {
-        "tags": [
-          "Send Email"
-        ],
+        "tags": ["Send Email"],
         "summary": "Send book by email",
         "description": "Send a book to a recipient via email. Requires email permission or admin.",
         "operationId": "sendEmail",
@@ -3731,9 +3531,7 @@
     },
     "/api/v1/email/book/{bookId}": {
       "post": {
-        "tags": [
-          "Send Email"
-        ],
+        "tags": ["Send Email"],
         "summary": "Quick send book by email",
         "description": "Quickly send a book by its ID via email. Requires email permission or admin.",
         "operationId": "emailBookQuick",
@@ -3765,9 +3563,7 @@
     },
     "/api/v1/custom-fonts/upload": {
       "post": {
-        "tags": [
-          "Custom Fonts"
-        ],
+        "tags": ["Custom Fonts"],
         "summary": "Upload a custom font",
         "description": "Upload a custom font file (.ttf, .otf, .woff, .woff2) for the authenticated user",
         "operationId": "uploadFont",
@@ -3794,9 +3590,7 @@
                     "description": "Font file (.ttf, .otf, .woff, .woff2)"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -3827,9 +3621,7 @@
     },
     "/api/v1/books/{targetBookId}/attach-file": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Attach book files",
         "description": "Attach book files from single-file source books to a target book as alternative formats.",
         "operationId": "attachBookFiles",
@@ -3901,9 +3693,7 @@
     },
     "/api/v1/books/{bookId}/sidecar/import": {
       "post": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Import metadata from sidecar",
         "description": "Import book metadata from a sidecar JSON file",
         "operationId": "importFromSidecar",
@@ -3951,9 +3741,7 @@
     },
     "/api/v1/books/{bookId}/sidecar/export": {
       "post": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Export metadata to sidecar",
         "description": "Export book metadata to a sidecar JSON file",
         "operationId": "exportToSidecar",
@@ -4001,9 +3789,7 @@
     },
     "/api/v1/books/{bookId}/regenerate-cover": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Regenerate cover for a book",
         "description": "Regenerate cover for a specific book. Requires metadata edit permission or admin.",
         "operationId": "regenerateCovers",
@@ -4028,9 +3814,7 @@
     },
     "/api/v1/books/{bookId}/regenerate-audiobook-cover": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Regenerate audiobook cover for a book",
         "description": "Regenerate audiobook cover for a specific book by extracting from the audiobook file. Requires metadata edit permission or admin.",
         "operationId": "regenerateAudiobookCover",
@@ -4055,9 +3839,7 @@
     },
     "/api/v1/books/{bookId}/metadata/prospective": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Get prospective metadata for a book",
         "description": "Fetch prospective metadata for a book by its ID. Requires metadata edit permission or admin.",
         "operationId": "getMetadataList",
@@ -4101,9 +3883,7 @@
     },
     "/api/v1/books/{bookId}/metadata/covers": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Get cover images for a book",
         "description": "Fetch cover images for a book.",
         "operationId": "getImages",
@@ -4148,9 +3928,7 @@
     },
     "/api/v1/books/{bookId}/metadata/cover/upload": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Upload cover image from file",
         "description": "Upload a cover image for a book from a file. Requires metadata edit permission or admin.",
         "operationId": "uploadCoverFromFile",
@@ -4178,9 +3956,7 @@
                     "description": "Cover image file"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -4194,9 +3970,7 @@
     },
     "/api/v1/books/{bookId}/metadata/cover/from-url": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Upload cover image from URL",
         "description": "Upload a cover image for a book from a URL. Requires metadata edit permission or admin.",
         "operationId": "uploadCoverFromUrl",
@@ -4235,9 +4009,7 @@
     },
     "/api/v1/books/{bookId}/metadata/audiobook-cover/upload": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Upload audiobook cover image from file",
         "description": "Upload an audiobook cover image for a book from a file. Requires metadata edit permission or admin.",
         "operationId": "uploadAudiobookCoverFromFile",
@@ -4265,9 +4037,7 @@
                     "description": "Cover image file"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -4281,9 +4051,7 @@
     },
     "/api/v1/books/{bookId}/metadata/audiobook-cover/from-url": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Upload audiobook cover image from URL",
         "description": "Upload an audiobook cover image for a book from a URL. Requires metadata edit permission or admin.",
         "operationId": "uploadAudiobookCoverFromUrl",
@@ -4322,9 +4090,7 @@
     },
     "/api/v1/books/{bookId}/generate-custom-cover": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Generate custom cover for a book",
         "description": "Generate a custom cover for a specific book based on its metadata. Requires metadata edit permission or admin.",
         "operationId": "generateCustomCover",
@@ -4349,9 +4115,7 @@
     },
     "/api/v1/books/{bookId}/generate-custom-audiobook-cover": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Generate custom audiobook cover for a book",
         "description": "Generate a custom audiobook cover for a specific book based on its metadata. Requires metadata edit permission or admin.",
         "operationId": "generateCustomAudiobookCover",
@@ -4376,9 +4140,7 @@
     },
     "/api/v1/books/{bookId}/files": {
       "get": {
-        "tags": [
-          "Book Files"
-        ],
+        "tags": ["Book Files"],
         "summary": "List additional files by type",
         "description": "Retrieve additional files for a specific book filtered by whether they are primary book files.",
         "operationId": "additionalFileGetFilesByIsBook",
@@ -4418,9 +4180,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Book Files"
-        ],
+        "tags": ["Book Files"],
         "summary": "Upload additional book file",
         "description": "Upload and attach a new additional file to a specific book.",
         "operationId": "additionalFileUploadAdditionalFile",
@@ -4448,15 +4208,7 @@
             "required": false,
             "schema": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           {
@@ -4479,9 +4231,7 @@
                     "format": "binary"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -4502,9 +4252,7 @@
     },
     "/api/v1/books/{bookId}/files/{fileId}/detach": {
       "post": {
-        "tags": [
-          "Book Files"
-        ],
+        "tags": ["Book Files"],
         "summary": "Detach additional book file",
         "description": "Detach a specific additional file from a book and optionally copy metadata.",
         "operationId": "additionalFileDetachFile",
@@ -4554,9 +4302,7 @@
     },
     "/api/v1/books/status": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Update read status",
         "description": "Update the read status for one or more books.",
         "operationId": "updateReadStatus",
@@ -4589,9 +4335,7 @@
     },
     "/api/v1/books/shelves": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Assign books to shelves",
         "description": "Assign or unassign books to/from shelves.",
         "operationId": "addBookToShelf",
@@ -4624,9 +4368,7 @@
     },
     "/api/v1/books/reset-progress": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Reset reading progress",
         "description": "Reset the reading progress for one or more books.",
         "operationId": "resetProgress",
@@ -4638,11 +4380,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "BOOKLORE",
-                "KOREADER",
-                "KOBO"
-              ]
+              "enum": ["BOOKLORE", "KOREADER", "KOBO"]
             }
           }
         ],
@@ -4693,9 +4431,7 @@
     },
     "/api/v1/books/reset-personal-rating": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Reset personal rating",
         "description": "Reset the personal rating for one or more books.",
         "operationId": "resetPersonalRating",
@@ -4746,9 +4482,7 @@
     },
     "/api/v1/books/regenerate-covers": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Regenerate all covers",
         "description": "Regenerate covers for all books. Requires metadata edit permission or admin.",
         "operationId": "regenerateCovers_1",
@@ -4772,9 +4506,7 @@
     },
     "/api/v1/books/progress": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Update read progress",
         "description": "Update the read progress for a book.",
         "operationId": "addBookToProgress",
@@ -4797,9 +4529,7 @@
     },
     "/api/v1/books/physical": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Create a physical book",
         "description": "Create a physical book without digital files. Requires library management permission or admin.",
         "operationId": "createPhysicalBook",
@@ -4859,9 +4589,7 @@
     },
     "/api/v1/books/metadata/recalculate-match-scores": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Recalculate metadata match scores",
         "description": "Recalculate match scores for all metadata. Requires admin.",
         "operationId": "recalculateMatchScores",
@@ -4874,9 +4602,7 @@
     },
     "/api/v1/books/metadata/manage/delete": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Delete metadata values",
         "description": "Delete metadata values. Requires metadata edit permission or admin.",
         "operationId": "deleteMetadata",
@@ -4899,9 +4625,7 @@
     },
     "/api/v1/books/metadata/manage/consolidate": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Consolidate metadata",
         "description": "Merge metadata values. Requires metadata edit permission or admin.",
         "operationId": "mergeMetadata",
@@ -4924,9 +4648,7 @@
     },
     "/api/v1/books/metadata/isbn-lookup": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Lookup metadata by ISBN",
         "description": "Fetch metadata for a book by ISBN. Requires library management permission or admin.",
         "operationId": "lookupByIsbn",
@@ -4966,9 +4688,7 @@
     },
     "/api/v1/books/duplicates": {
       "post": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Find duplicate books",
         "description": "Detect potential duplicate books in a library using configurable matching strategies.",
         "operationId": "findDuplicates",
@@ -5001,9 +4721,7 @@
     },
     "/api/v1/books/bulk-upload-cover": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Upload cover image for multiple books",
         "description": "Upload a cover image to apply to multiple books. Requires metadata edit permission or admin.",
         "operationId": "bulkUploadCover",
@@ -5035,9 +4753,7 @@
                     "description": "Cover image file"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -5051,9 +4767,7 @@
     },
     "/api/v1/books/bulk-regenerate-covers": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Regenerate covers for selected books",
         "description": "Regenerate covers for a list of books. Requires metadata edit permission or admin.",
         "operationId": "regenerateCoversForBooks",
@@ -5076,9 +4790,7 @@
     },
     "/api/v1/books/bulk-generate-custom-covers": {
       "post": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Generate custom covers for selected books",
         "description": "Generate custom covers for a list of books. Requires metadata edit permission or admin.",
         "operationId": "generateCustomCoversForBooks",
@@ -5101,9 +4813,7 @@
     },
     "/api/v1/bookmarks": {
       "post": {
-        "tags": [
-          "Bookmarks"
-        ],
+        "tags": ["Bookmarks"],
         "summary": "Create a bookmark",
         "description": "Create a new bookmark for a book.",
         "operationId": "createBookmark",
@@ -5133,9 +4843,7 @@
     },
     "/api/v1/bookdrop/rescan": {
       "post": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Rescan bookdrop folder",
         "description": "Trigger a rescan of the bookdrop folder for new files.",
         "operationId": "rescanBookdrop",
@@ -5148,9 +4856,7 @@
     },
     "/api/v1/bookdrop/imports/finalize": {
       "post": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Finalize bookdrop import",
         "description": "Finalize the import of selected bookdrop files.",
         "operationId": "finalizeImport",
@@ -5180,9 +4886,7 @@
     },
     "/api/v1/bookdrop/files/extract-pattern": {
       "post": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Extract metadata from filenames using pattern",
         "description": "Parse filenames of selected files using a pattern to extract metadata fields.",
         "operationId": "extractFromPattern",
@@ -5212,9 +4916,7 @@
     },
     "/api/v1/bookdrop/files/discard": {
       "post": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Discard selected bookdrop files",
         "description": "Discard selected bookdrop files based on selection criteria.",
         "operationId": "discardSelectedFiles",
@@ -5237,9 +4939,7 @@
     },
     "/api/v1/bookdrop/files/bulk-edit": {
       "post": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Bulk edit metadata for selected files",
         "description": "Apply metadata changes to multiple selected files at once.",
         "operationId": "bulkEditMetadata_1",
@@ -5269,9 +4969,7 @@
     },
     "/api/v1/book-notes": {
       "post": {
-        "tags": [
-          "Book Notes"
-        ],
+        "tags": ["Book Notes"],
         "summary": "Create or update a note",
         "description": "Create a new note or update an existing note for a book.",
         "operationId": "createNote_1",
@@ -5301,9 +4999,7 @@
     },
     "/api/v1/authors/{authorId}/quick-match": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Quick-match author",
         "description": "Search and match an author with the first result in a single call.",
         "operationId": "quickMatchAuthor",
@@ -5344,9 +5040,7 @@
     },
     "/api/v1/authors/{authorId}/photo/url": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Upload author photo from URL",
         "description": "Download an image from a URL and save it as the author's photo.",
         "operationId": "uploadAuthorPhotoFromUrl",
@@ -5379,9 +5073,7 @@
     },
     "/api/v1/authors/{authorId}/photo/upload": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Upload author photo",
         "description": "Upload a photo for an author from a file.",
         "operationId": "uploadAuthorPhoto",
@@ -5409,9 +5101,7 @@
                     "description": "Photo image file"
                   }
                 },
-                "required": [
-                  "file"
-                ]
+                "required": ["file"]
               }
             }
           }
@@ -5425,9 +5115,7 @@
     },
     "/api/v1/authors/{authorId}/match": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Match author metadata",
         "description": "Match an author with an external provider result to populate metadata.",
         "operationId": "matchAuthor",
@@ -5469,9 +5157,7 @@
     },
     "/api/v1/authors/unmatch": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Unmatch authors",
         "description": "Clear metadata for multiple authors.",
         "operationId": "unmatchAuthors",
@@ -5498,9 +5184,7 @@
     },
     "/api/v1/authors/auto-match": {
       "post": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Auto-match authors",
         "description": "Automatically match multiple authors, streaming results as each is matched.",
         "operationId": "autoMatchAuthors",
@@ -5537,9 +5221,7 @@
     },
     "/api/v1/auth/register": {
       "post": {
-        "tags": [
-          "Authentication"
-        ],
+        "tags": ["Authentication"],
         "summary": "Register a new user",
         "description": "Register a new user. Only admins can register users.",
         "operationId": "registerUser",
@@ -5579,9 +5261,7 @@
     },
     "/api/v1/auth/refresh": {
       "post": {
-        "tags": [
-          "Authentication"
-        ],
+        "tags": ["Authentication"],
         "summary": "Refresh JWT token",
         "description": "Refresh the JWT token using a valid refresh token.",
         "operationId": "refreshToken",
@@ -5611,9 +5291,7 @@
     },
     "/api/v1/auth/oidc/mobile/callback": {
       "post": {
-        "tags": [
-          "OIDC Authentication"
-        ],
+        "tags": ["OIDC Authentication"],
         "summary": "Handle OIDC mobile callback",
         "description": "Process mobile OIDC callback parameters and exchange authorization code for tokens.",
         "operationId": "oidcHandleMobileCallback",
@@ -5675,9 +5353,7 @@
     },
     "/api/v1/auth/oidc/callback": {
       "post": {
-        "tags": [
-          "OIDC Authentication"
-        ],
+        "tags": ["OIDC Authentication"],
         "summary": "Handle OIDC callback",
         "description": "Process the OIDC callback payload and exchange authorization code for tokens.",
         "operationId": "oidcHandleCallback",
@@ -5707,9 +5383,7 @@
     },
     "/api/v1/auth/oidc/backchannel-logout": {
       "post": {
-        "tags": [
-          "OIDC Authentication"
-        ],
+        "tags": ["OIDC Authentication"],
         "summary": "Handle OIDC backchannel logout",
         "description": "Process OIDC backchannel logout token and invalidate matching session state.",
         "operationId": "oidcBackchannelLogout",
@@ -5723,9 +5397,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "logout_token"
-                ]
+                "required": ["logout_token"]
               }
             }
           }
@@ -5739,9 +5411,7 @@
     },
     "/api/v1/auth/logout": {
       "post": {
-        "tags": [
-          "Authentication"
-        ],
+        "tags": ["Authentication"],
         "summary": "Logout user",
         "description": "Logout the current user and invalidate refresh token state when provided.",
         "operationId": "logout",
@@ -5780,9 +5450,7 @@
     },
     "/api/v1/auth/login": {
       "post": {
-        "tags": [
-          "Authentication"
-        ],
+        "tags": ["Authentication"],
         "summary": "Login user",
         "description": "Authenticate a user and return JWT tokens.",
         "operationId": "loginUser",
@@ -5812,9 +5480,7 @@
     },
     "/api/v1/annotations": {
       "post": {
-        "tags": [
-          "Annotations"
-        ],
+        "tags": ["Annotations"],
         "summary": "Create an annotation",
         "description": "Create a new annotation (highlight, underline, etc.) for a book.",
         "operationId": "createAnnotation",
@@ -5844,9 +5510,7 @@
     },
     "/api/v1/admin/oidc-group-mappings": {
       "get": {
-        "tags": [
-          "OIDC Group Mappings"
-        ],
+        "tags": ["OIDC Group Mappings"],
         "summary": "List OIDC group mappings",
         "description": "Retrieve all configured OIDC group mappings.",
         "operationId": "oidcGroupMappingGetAll",
@@ -5867,9 +5531,7 @@
         }
       },
       "post": {
-        "tags": [
-          "OIDC Group Mappings"
-        ],
+        "tags": ["OIDC Group Mappings"],
         "summary": "Create OIDC group mapping",
         "description": "Create a new OIDC group mapping.",
         "operationId": "oidcGroupMappingCreate",
@@ -5899,9 +5561,7 @@
     },
     "/api/metadata/tasks/{taskId}/proposals/{proposalId}/status": {
       "post": {
-        "tags": [
-          "Metadata Tasks"
-        ],
+        "tags": ["Metadata Tasks"],
         "summary": "Update proposal status",
         "description": "Update the status of a proposal for a metadata task. Requires metadata edit permission or admin.",
         "operationId": "updateProposalStatus",
@@ -5944,9 +5604,7 @@
     },
     "/api/magic-shelves": {
       "get": {
-        "tags": [
-          "Magic Shelves"
-        ],
+        "tags": ["Magic Shelves"],
         "summary": "Get all magic shelves for user",
         "description": "Retrieve all magic shelves for the current user.",
         "operationId": "getAllForUser",
@@ -5967,9 +5625,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Magic Shelves"
-        ],
+        "tags": ["Magic Shelves"],
         "summary": "Create or update a magic shelf",
         "description": "Create or update a magic shelf for the user.",
         "operationId": "createUpdateShelf",
@@ -5999,9 +5655,7 @@
     },
     "/api/koreader/users/create": {
       "post": {
-        "tags": [
-          "KoReader"
-        ],
+        "tags": ["KoReader"],
         "summary": "Create KoReader user (disabled)",
         "description": "Attempt to register a user via KoReader (always forbidden).",
         "operationId": "createUser_1",
@@ -6033,9 +5687,7 @@
     },
     "/api/kobo/{token}/v1/products/{bookId}/rating/{rating}": {
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Update Rating",
         "description": "Updates the personal rating for a book given the Kobo star rating.",
         "operationId": "putRating",
@@ -6076,9 +5728,7 @@
     },
     "/api/kobo/{token}/v1/products/{bookId}/nextread": {
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get Kobo Next to Read",
         "description": "Retrieves the next book to read after the specified book, such as with a series.",
         "operationId": "getNextRead",
@@ -6109,9 +5759,7 @@
     },
     "/api/kobo/{token}/v1/auth/device": {
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Authenticate Kobo device",
         "description": "Authenticate a Kobo device.",
         "operationId": "authenticateDevice",
@@ -6141,9 +5789,7 @@
     },
     "/api/kobo/{token}/v1/analytics/gettests": {
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get Kobo test analytics",
         "description": "Get test analytics for Kobo.",
         "operationId": "getTests",
@@ -6174,9 +5820,7 @@
     },
     "/api/kobo/{token}/v1/analytics/event": {
       "post": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Publish analytics event",
         "description": "Publish an analytics event for Kobo.",
         "operationId": "pushEvent",
@@ -6196,9 +5840,7 @@
     },
     "/api/v2/opds-users/{id}": {
       "delete": {
-        "tags": [
-          "OPDS Users"
-        ],
+        "tags": ["OPDS Users"],
         "summary": "Delete OPDS user",
         "description": "Delete an OPDS user by ID.",
         "operationId": "deleteUser_1",
@@ -6221,9 +5863,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "OPDS Users"
-        ],
+        "tags": ["OPDS Users"],
         "summary": "Update OPDS user",
         "description": "Update an OPDS user's settings by ID.",
         "operationId": "updateUser_1",
@@ -6265,9 +5905,7 @@
     },
     "/api/v1/tasks/{taskType}/cron": {
       "patch": {
-        "tags": [
-          "Tasks"
-        ],
+        "tags": ["Tasks"],
         "summary": "Update task cron configuration",
         "description": "Patch cron schedule configuration for a task type and reschedule execution.",
         "operationId": "taskPatchCronConfig",
@@ -6316,9 +5954,7 @@
     },
     "/api/v1/libraries/{libraryId}/file-naming-pattern": {
       "patch": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Set file naming pattern",
         "description": "Set the file naming pattern for a library. Requires admin or manipulation permission.",
         "operationId": "setFileNamingPattern",
@@ -6364,9 +6000,7 @@
     },
     "/api/v1/koreader-users/me/sync": {
       "patch": {
-        "tags": [
-          "KoReader Users"
-        ],
+        "tags": ["KoReader Users"],
         "summary": "Toggle KoReader sync",
         "description": "Enable or disable KoReader sync for the current user.",
         "operationId": "updateSyncEnabled",
@@ -6390,9 +6024,7 @@
     },
     "/api/v1/koreader-users/me/sync-progress-with-grimmory": {
       "patch": {
-        "tags": [
-          "KoReader Users"
-        ],
+        "tags": ["KoReader Users"],
         "summary": "Toggle sync progress with web reader",
         "description": "Enable or disable syncing reading progress with the web reader.",
         "operationId": "toggleSyncProgressWithWebReader",
@@ -6416,9 +6048,7 @@
     },
     "/api/v1/koreader-users/me/sync-progress-with-booklore": {
       "patch": {
-        "tags": [
-          "KoReader Users"
-        ],
+        "tags": ["KoReader Users"],
         "summary": "[Deprecated] Toggle sync progress with web reader",
         "description": "Deprecated alias for /me/sync-progress-with-grimmory. Use the new endpoint; this one will be removed in a future release.",
         "operationId": "toggleSyncProgressWithBooklore",
@@ -6443,9 +6073,7 @@
     },
     "/api/v1/email/recipients/{id}/set-default": {
       "patch": {
-        "tags": [
-          "Email Recipients"
-        ],
+        "tags": ["Email Recipients"],
         "summary": "Set default email recipient",
         "description": "Set a specific email recipient as the default.",
         "operationId": "setDefaultEmailRecipient",
@@ -6470,9 +6098,7 @@
     },
     "/api/v1/email/providers/{id}/set-default": {
       "patch": {
-        "tags": [
-          "Email Providers"
-        ],
+        "tags": ["Email Providers"],
         "summary": "Set default email provider",
         "description": "Set a specific email provider as the default.",
         "operationId": "setDefaultEmailProvider",
@@ -6497,9 +6123,7 @@
     },
     "/api/v1/books/{bookId}/physical": {
       "patch": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Toggle physical book flag",
         "description": "Mark or unmark a book as a physical book.",
         "operationId": "togglePhysicalFlag",
@@ -6550,9 +6174,7 @@
     },
     "/komga/api/v2/users/me": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get current user details",
         "operationId": "getCurrentUser_1",
         "responses": {
@@ -6571,9 +6193,7 @@
     },
     "/komga/api/v1/series": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "List series",
         "operationId": "getAllSeries",
         "parameters": [
@@ -6636,9 +6256,7 @@
     },
     "/komga/api/v1/series/{seriesId}": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get series details",
         "operationId": "getSeries",
         "parameters": [
@@ -6668,9 +6286,7 @@
     },
     "/komga/api/v1/series/{seriesId}/thumbnail": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get series thumbnail",
         "operationId": "getSeriesThumbnail",
         "parameters": [
@@ -6701,9 +6317,7 @@
     },
     "/komga/api/v1/series/{seriesId}/books": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "List books in series",
         "operationId": "getSeriesBooks",
         "parameters": [
@@ -6765,9 +6379,7 @@
     },
     "/komga/api/v1/libraries": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "List all libraries",
         "operationId": "getAllLibraries",
         "responses": {
@@ -6786,9 +6398,7 @@
     },
     "/komga/api/v1/libraries/{libraryId}": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get library details",
         "operationId": "getLibrary_1",
         "parameters": [
@@ -6819,9 +6429,7 @@
     },
     "/komga/api/v1/collections": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "List collections",
         "operationId": "getCollections",
         "parameters": [
@@ -6874,9 +6482,7 @@
     },
     "/komga/api/v1/books": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "List books",
         "operationId": "getAllBooks",
         "parameters": [
@@ -6929,9 +6535,7 @@
     },
     "/komga/api/v1/books/{bookId}": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get book details",
         "operationId": "getBook",
         "parameters": [
@@ -6962,9 +6566,7 @@
     },
     "/komga/api/v1/books/{bookId}/thumbnail": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get book thumbnail",
         "operationId": "getBookThumbnail",
         "parameters": [
@@ -6996,9 +6598,7 @@
     },
     "/komga/api/v1/books/{bookId}/pages": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get book pages metadata",
         "operationId": "getBookPages",
         "parameters": [
@@ -7029,9 +6629,7 @@
     },
     "/komga/api/v1/books/{bookId}/pages/{pageNumber}": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Get book page image",
         "operationId": "getBookPage",
         "parameters": [
@@ -7082,9 +6680,7 @@
     },
     "/komga/api/v1/books/{bookId}/file": {
       "get": {
-        "tags": [
-          "Komga API"
-        ],
+        "tags": ["Komga API"],
         "summary": "Download book file",
         "operationId": "downloadBook",
         "parameters": [
@@ -7115,9 +6711,7 @@
     },
     "/api/v2/book-notes/book/{bookId}": {
       "get": {
-        "tags": [
-          "Book Notes V2"
-        ],
+        "tags": ["Book Notes V2"],
         "summary": "Get notes for a book",
         "description": "Retrieve all notes for a specific book.",
         "operationId": "getNotesForBook",
@@ -7152,9 +6746,7 @@
     },
     "/api/v1/version": {
       "get": {
-        "tags": [
-          "Version"
-        ],
+        "tags": ["Version"],
         "summary": "Get application version",
         "description": "Retrieve the current application version.",
         "operationId": "getVersionInfo",
@@ -7174,9 +6766,7 @@
     },
     "/api/v1/version/changelog": {
       "get": {
-        "tags": [
-          "Version"
-        ],
+        "tags": ["Version"],
         "summary": "Get changelog since current version",
         "description": "Retrieve the changelog since the current version.",
         "operationId": "getChangelogSinceCurrent",
@@ -7199,9 +6789,7 @@
     },
     "/api/v1/users": {
       "get": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Get all users",
         "description": "Retrieve a list of all users. Requires admin.",
         "operationId": "getAllUsers",
@@ -7224,9 +6812,7 @@
     },
     "/api/v1/users/me": {
       "get": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "summary": "Get current user",
         "description": "Retrieve the profile of the currently authenticated user.",
         "operationId": "getMyself",
@@ -7246,9 +6832,7 @@
     },
     "/api/v1/user-stats/reading/timeline": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get reading session timeline for a week",
         "description": "Returns reading sessions grouped by book for calendar timeline view",
         "operationId": "getTimelineForWeek",
@@ -7317,9 +6901,7 @@
     },
     "/api/v1/user-stats/reading/streak": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get reading streak",
         "description": "Returns current streak, longest streak, total reading days, and last 52 weeks of daily reading activity",
         "operationId": "getReadingStreak",
@@ -7349,9 +6931,7 @@
     },
     "/api/v1/user-stats/reading/speed": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get reading speed analysis",
         "description": "Returns average reading speed (progress per minute) over time for a specific year",
         "operationId": "getReadingSpeedForYear",
@@ -7398,9 +6978,7 @@
     },
     "/api/v1/user-stats/reading/session-scatter": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get session scatter data",
         "description": "Returns individual session data points for scatter plot visualization",
         "operationId": "getSessionScatter",
@@ -7447,9 +7025,7 @@
     },
     "/api/v1/user-stats/reading/peak-hours": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get peak reading hours",
         "description": "Returns reading activity distribution by hour of day. Can be filtered by year and/or month.",
         "operationId": "getPeakReadingHours",
@@ -7505,9 +7081,7 @@
     },
     "/api/v1/user-stats/reading/page-turner-scores": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get page turner scores",
         "description": "Returns engagement/grip scores for completed books based on reading session patterns",
         "operationId": "getPageTurnerScores",
@@ -7543,9 +7117,7 @@
     },
     "/api/v1/user-stats/reading/heatmap": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get reading session heatmap for a year",
         "description": "Returns daily reading session counts for the authenticated user for a specific year",
         "operationId": "getHeatmapForYear",
@@ -7592,9 +7164,7 @@
     },
     "/api/v1/user-stats/reading/heatmap/monthly": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get reading session heatmap for a month",
         "description": "Returns daily reading session counts for the authenticated user for a specific year and month",
         "operationId": "getHeatmapForMonth",
@@ -7650,9 +7220,7 @@
     },
     "/api/v1/user-stats/reading/genres": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get genre statistics",
         "description": "Returns reading statistics grouped by book genres/categories",
         "operationId": "getGenreStatistics",
@@ -7688,9 +7256,7 @@
     },
     "/api/v1/user-stats/reading/favorite-days": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get favorite reading days",
         "description": "Returns reading activity distribution by day of week. Can be filtered by year and/or month.",
         "operationId": "getFavoriteReadingDays",
@@ -7746,9 +7312,7 @@
     },
     "/api/v1/user-stats/reading/dates": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get all reading dates",
         "description": "Returns daily reading session counts across all time for the authenticated user",
         "operationId": "getReadingDates",
@@ -7784,9 +7348,7 @@
     },
     "/api/v1/user-stats/reading/completion-timeline": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get completion timeline",
         "description": "Returns reading completion statistics over time with status breakdown for a specific year",
         "operationId": "getCompletionTimeline",
@@ -7833,9 +7395,7 @@
     },
     "/api/v1/user-stats/reading/completion-race": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get completion race data",
         "description": "Returns reading session progress data for completed books in a given year, for visualizing completion races",
         "operationId": "getCompletionRace",
@@ -7882,9 +7442,7 @@
     },
     "/api/v1/user-stats/reading/book-timeline": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get book timeline for a year",
         "description": "Returns the reading lifespan of each book the user read in a given year",
         "operationId": "getBookTimeline",
@@ -7931,9 +7489,7 @@
     },
     "/api/v1/user-stats/reading/book-distributions": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get book distribution statistics",
         "description": "Returns rating, progress, and read status distributions for the authenticated user's library",
         "operationId": "getBookDistributions",
@@ -7963,9 +7519,7 @@
     },
     "/api/v1/user-stats/reading/book-completion-heatmap": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get book completion heatmap",
         "description": "Returns monthly book completion counts for the last 10 years for the authenticated user",
         "operationId": "getBookCompletionHeatmap",
@@ -8001,9 +7555,7 @@
     },
     "/api/v1/user-stats/listening/weekly-trend": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get weekly listening trend",
         "description": "Returns weekly listening hours over a number of past weeks",
         "operationId": "getWeeklyListeningTrend",
@@ -8051,9 +7603,7 @@
     },
     "/api/v1/user-stats/listening/session-scatter": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening session scatter data",
         "description": "Returns individual listening session points for scatter plot visualizations.",
         "operationId": "getListeningSessionScatter",
@@ -8076,9 +7626,7 @@
     },
     "/api/v1/user-stats/listening/peak-hours": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening peak hours",
         "description": "Returns listening activity distribution by hour of day. Can be filtered by year and/or month.",
         "operationId": "getListeningPeakHours",
@@ -8121,9 +7669,7 @@
     },
     "/api/v1/user-stats/listening/monthly-pace": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get monthly audiobook pace",
         "description": "Returns audiobooks completed per month with listening duration",
         "operationId": "getMonthlyListeningPace",
@@ -8171,9 +7717,7 @@
     },
     "/api/v1/user-stats/listening/longest-books": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get longest listened audiobooks",
         "description": "Returns longest audiobooks ranked by listening duration.",
         "operationId": "getListeningLongestBooks",
@@ -8196,9 +7740,7 @@
     },
     "/api/v1/user-stats/listening/heatmap/monthly": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening heatmap for a month",
         "description": "Returns daily listening session counts and duration for the authenticated user for a specific month",
         "operationId": "getListeningHeatmapForMonth",
@@ -8254,9 +7796,7 @@
     },
     "/api/v1/user-stats/listening/genres": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening genre statistics",
         "description": "Returns listening statistics grouped by audiobook genres/categories.",
         "operationId": "getListeningGenreStatistics",
@@ -8279,9 +7819,7 @@
     },
     "/api/v1/user-stats/listening/finish-funnel": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get audiobook finish rate funnel",
         "description": "Returns how many audiobooks reached each progress milestone (25%, 50%, 75%, finished)",
         "operationId": "getListeningFinishFunnel",
@@ -8311,9 +7849,7 @@
     },
     "/api/v1/user-stats/listening/favorite-days": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening favorite days",
         "description": "Returns listening activity distribution by day of week. Can be filtered by year and/or month.",
         "operationId": "getListeningFavoriteDays",
@@ -8356,9 +7892,7 @@
     },
     "/api/v1/user-stats/listening/completion": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get audiobook completion progress",
         "description": "Returns in-progress audiobooks with completion percentages and overall library stats",
         "operationId": "getListeningCompletion",
@@ -8388,9 +7922,7 @@
     },
     "/api/v1/user-stats/listening/authors": {
       "get": {
-        "tags": [
-          "User Stats"
-        ],
+        "tags": ["User Stats"],
         "summary": "Get listening author statistics",
         "description": "Returns listening statistics grouped by audiobook authors.",
         "operationId": "getListeningAuthorStats",
@@ -8413,9 +7945,7 @@
     },
     "/api/v1/tasks": {
       "get": {
-        "tags": [
-          "Tasks"
-        ],
+        "tags": ["Tasks"],
         "summary": "List available tasks",
         "description": "Retrieve all task types available to the current user.",
         "operationId": "taskGetAvailableTasks",
@@ -8438,9 +7968,7 @@
     },
     "/api/v1/tasks/last": {
       "get": {
-        "tags": [
-          "Tasks"
-        ],
+        "tags": ["Tasks"],
         "summary": "Get latest tasks by type",
         "description": "Retrieve the latest task execution entry for each task type.",
         "operationId": "taskGetLatestTasksForEachType",
@@ -8460,9 +7988,7 @@
     },
     "/api/v1/shelves/{shelfId}/books": {
       "get": {
-        "tags": [
-          "Shelves"
-        ],
+        "tags": ["Shelves"],
         "summary": "Get books on a shelf",
         "description": "Retrieve all books assigned to a specific shelf.",
         "operationId": "getShelfBooks",
@@ -8497,9 +8023,7 @@
     },
     "/api/v1/setup/status": {
       "get": {
-        "tags": [
-          "Setup"
-        ],
+        "tags": ["Setup"],
         "summary": "Get setup status",
         "description": "Check if initial setup has been completed.",
         "operationId": "getSetupStatus",
@@ -8519,9 +8043,7 @@
     },
     "/api/v1/reviews/book/{bookId}": {
       "get": {
-        "tags": [
-          "Book Reviews"
-        ],
+        "tags": ["Book Reviews"],
         "summary": "List reviews for a book",
         "description": "Retrieve all reviews for a specific book.",
         "operationId": "listByBook",
@@ -8568,9 +8090,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Book Reviews"
-        ],
+        "tags": ["Book Reviews"],
         "summary": "Delete all reviews for a book",
         "description": "Delete all reviews for a specific book. Requires metadata edit permission or admin.",
         "operationId": "deleteAllByBookId",
@@ -8595,9 +8115,7 @@
     },
     "/api/v1/reading-sessions/book/{bookId}": {
       "get": {
-        "tags": [
-          "Reading Sessions"
-        ],
+        "tags": ["Reading Sessions"],
         "summary": "Get reading sessions for a book",
         "description": "Returns paginated reading sessions for a specific book for the authenticated user",
         "operationId": "getReadingSessionsForBook",
@@ -8671,9 +8189,7 @@
     },
     "/api/v1/public-settings": {
       "get": {
-        "tags": [
-          "Public App Settings"
-        ],
+        "tags": ["Public App Settings"],
         "summary": "Get public app settings",
         "description": "Retrieve public application settings.",
         "operationId": "getPublicSettings",
@@ -8693,9 +8209,7 @@
     },
     "/api/v1/pdf/{bookId}/pages": {
       "get": {
-        "tags": [
-          "PDF Reader"
-        ],
+        "tags": ["PDF Reader"],
         "summary": "List pages in a PDF book",
         "description": "Retrieve a list of available page numbers for a PDF book.",
         "operationId": "listPages",
@@ -8740,9 +8254,7 @@
     },
     "/api/v1/pdf/{bookId}/info": {
       "get": {
-        "tags": [
-          "PDF Reader"
-        ],
+        "tags": ["PDF Reader"],
         "summary": "Get book info for a PDF book",
         "description": "Retrieve book information including page count and hierarchical outline/table of contents.",
         "operationId": "getBookInfo",
@@ -8783,9 +8295,7 @@
     },
     "/api/v1/path": {
       "get": {
-        "tags": [
-          "Library Paths"
-        ],
+        "tags": ["Library Paths"],
         "summary": "Get folders at a path",
         "description": "Retrieve a list of folders at a given path. Requires admin or library manipulation permission.",
         "operationId": "getFolders",
@@ -8819,9 +8329,7 @@
     },
     "/api/v1/opds": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS root catalog",
         "description": "Retrieve the OPDS root navigation feed.",
         "operationId": "getRootCatalog",
@@ -8841,9 +8349,7 @@
     },
     "/api/v1/opds/{bookId}/download": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Download book file",
         "description": "Download the book file by its ID. Optionally specify a fileId to download a specific format.",
         "operationId": "downloadBook_1",
@@ -8895,9 +8401,7 @@
     },
     "/api/v1/opds/{bookId}/cover": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get book cover image",
         "description": "Retrieve the cover image for a book by its ID.",
         "operationId": "getBookCover",
@@ -8941,9 +8445,7 @@
     },
     "/api/v1/opds/surprise": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get surprise feed",
         "description": "Retrieve the OPDS feed for surprise/random books.",
         "operationId": "getSurpriseFeed",
@@ -8963,9 +8465,7 @@
     },
     "/api/v1/opds/shelves": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS shelves navigation",
         "description": "Retrieve the OPDS shelves navigation feed.",
         "operationId": "getShelvesNavigation",
@@ -8985,9 +8485,7 @@
     },
     "/api/v1/opds/series": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS series navigation",
         "description": "Retrieve the OPDS series navigation feed.",
         "operationId": "getSeriesNavigation",
@@ -9007,9 +8505,7 @@
     },
     "/api/v1/opds/search.opds": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS search description",
         "description": "Retrieve the OpenSearch description document for OPDS search.",
         "operationId": "getSearchDescription",
@@ -9044,9 +8540,7 @@
     },
     "/api/v1/opds/recent": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get recent books feed",
         "description": "Retrieve the OPDS feed for recently added books.",
         "operationId": "getRecentBooks",
@@ -9067,9 +8561,7 @@
     },
     "/api/v1/opds/magic-shelves": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS magic shelves navigation",
         "description": "Retrieve the OPDS magic shelves navigation feed.",
         "operationId": "getMagicShelvesNavigation",
@@ -9089,9 +8581,7 @@
     },
     "/api/v1/opds/libraries": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS libraries navigation",
         "description": "Retrieve the OPDS libraries navigation feed.",
         "operationId": "getLibrariesNavigation",
@@ -9111,9 +8601,7 @@
     },
     "/api/v1/opds/catalog": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS catalog feed",
         "description": "Retrieve the OPDS acquisition catalog feed.",
         "operationId": "getCatalog",
@@ -9134,9 +8622,7 @@
     },
     "/api/v1/opds/authors": {
       "get": {
-        "tags": [
-          "OPDS"
-        ],
+        "tags": ["OPDS"],
         "summary": "Get OPDS authors navigation",
         "description": "Retrieve the OPDS authors navigation feed.",
         "operationId": "getAuthorsNavigation",
@@ -9156,9 +8642,7 @@
     },
     "/api/v1/notebook": {
       "get": {
-        "tags": [
-          "Notebook"
-        ],
+        "tags": ["Notebook"],
         "summary": "Get paginated notebook entries",
         "operationId": "getNotebookEntries",
         "parameters": [
@@ -9237,9 +8721,7 @@
     },
     "/api/v1/notebook/export": {
       "get": {
-        "tags": [
-          "Notebook"
-        ],
+        "tags": ["Notebook"],
         "summary": "Get all notebook entries for export",
         "operationId": "exportNotebookEntries",
         "parameters": [
@@ -9301,9 +8783,7 @@
     },
     "/api/v1/notebook/books": {
       "get": {
-        "tags": [
-          "Notebook"
-        ],
+        "tags": ["Notebook"],
         "summary": "Get books that have annotations",
         "operationId": "getBooksWithAnnotations",
         "parameters": [
@@ -9335,9 +8815,7 @@
     },
     "/api/v1/media/bookdrop/{bookdropId}/cover": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get bookdrop cover",
         "description": "Retrieve the cover image for a specific bookdrop file.",
         "operationId": "getBookdropCover",
@@ -9370,9 +8848,7 @@
     },
     "/api/v1/media/book/{bookId}/thumbnail": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get book thumbnail",
         "description": "Retrieve the thumbnail image for a specific book.",
         "operationId": "getBookThumbnail_1",
@@ -9405,9 +8881,7 @@
     },
     "/api/v1/media/book/{bookId}/cover": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get book cover",
         "description": "Retrieve the cover image for a specific book.",
         "operationId": "getBookCover_1",
@@ -9440,9 +8914,7 @@
     },
     "/api/v1/media/book/{bookId}/cbx/pages/{pageNumber}": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get CBX page as image",
         "description": "Retrieve a specific page from a CBX book as an image.",
         "operationId": "getCbxPage",
@@ -9486,9 +8958,7 @@
     },
     "/api/v1/media/book/{bookId}/audiobook-thumbnail": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get audiobook thumbnail",
         "description": "Retrieve the audiobook thumbnail image for a specific book.",
         "operationId": "getAudiobookThumbnail",
@@ -9521,9 +8991,7 @@
     },
     "/api/v1/media/book/{bookId}/audiobook-cover": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get audiobook cover",
         "description": "Retrieve the audiobook cover image for a specific book.",
         "operationId": "getAudiobookCover",
@@ -9556,9 +9024,7 @@
     },
     "/api/v1/media/author/{authorId}/thumbnail": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get author thumbnail",
         "description": "Retrieve the thumbnail for a specific author.",
         "operationId": "getAuthorThumbnail",
@@ -9591,9 +9057,7 @@
     },
     "/api/v1/media/author/{authorId}/photo": {
       "get": {
-        "tags": [
-          "Book Media"
-        ],
+        "tags": ["Book Media"],
         "summary": "Get author photo",
         "description": "Retrieve the photo for a specific author.",
         "operationId": "getAuthorPhoto",
@@ -9626,9 +9090,7 @@
     },
     "/api/v1/libraries/{libraryId}/format-counts": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get book counts by format",
         "description": "Get the count of books for each format in a library.",
         "operationId": "getBookCountsByFormat",
@@ -9664,9 +9126,7 @@
     },
     "/api/v1/libraries/{libraryId}/book": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get all books from a library",
         "description": "Retrieve all books from a specific library.",
         "operationId": "getBooks",
@@ -9701,9 +9161,7 @@
     },
     "/api/v1/libraries/{libraryId}/book/{bookId}": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get a book from a library",
         "description": "Retrieve a specific book from a library by its ID.",
         "operationId": "getBook_1",
@@ -9745,9 +9203,7 @@
     },
     "/api/v1/libraries/health": {
       "get": {
-        "tags": [
-          "Libraries"
-        ],
+        "tags": ["Libraries"],
         "summary": "Get library health",
         "description": "Check accessibility of all library paths.",
         "operationId": "getLibraryHealth",
@@ -9770,9 +9226,7 @@
     },
     "/api/v1/icons/{svgName}/content": {
       "get": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Get SVG icon content",
         "description": "Retrieve the SVG content of an icon by its name.",
         "operationId": "getSvgIconContent",
@@ -9803,9 +9257,7 @@
     },
     "/api/v1/icons/all/content": {
       "get": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Get all icon contents",
         "description": "Retrieve all SVG icons as a map of icon names to their content.",
         "operationId": "getAllIconsContent",
@@ -9828,9 +9280,7 @@
     },
     "/api/v1/healthcheck": {
       "get": {
-        "tags": [
-          "Healthcheck"
-        ],
+        "tags": ["Healthcheck"],
         "summary": "Get a ping response",
         "description": "Check if the application is responding",
         "operationId": "getPing",
@@ -9850,9 +9300,7 @@
     },
     "/api/v1/epub/{bookId}/info": {
       "get": {
-        "tags": [
-          "EPUB Reader"
-        ],
+        "tags": ["EPUB Reader"],
         "summary": "Get EPUB book info",
         "description": "Retrieve parsed metadata, spine, manifest, and TOC for an EPUB book.",
         "operationId": "getBookInfo_1",
@@ -9893,9 +9341,7 @@
     },
     "/api/v1/epub/{bookId}/file/{filePath}": {
       "get": {
-        "tags": [
-          "EPUB Reader"
-        ],
+        "tags": ["EPUB Reader"],
         "summary": "Get file from EPUB",
         "description": "Retrieve a specific file from within the EPUB archive (HTML, CSS, images, fonts, etc.).",
         "operationId": "getFile",
@@ -9937,9 +9383,7 @@
     },
     "/api/v1/custom-fonts": {
       "get": {
-        "tags": [
-          "Custom Fonts"
-        ],
+        "tags": ["Custom Fonts"],
         "summary": "Get all user's custom fonts",
         "description": "Retrieve all custom fonts for the authenticated user",
         "operationId": "getUserFonts",
@@ -9962,9 +9406,7 @@
     },
     "/api/v1/custom-fonts/{fontId}/file": {
       "get": {
-        "tags": [
-          "Custom Fonts"
-        ],
+        "tags": ["Custom Fonts"],
         "summary": "Get font file",
         "description": "Retrieve the font file for use in the browser",
         "operationId": "getFontFile",
@@ -10007,9 +9449,7 @@
     },
     "/api/v1/cbx/{bookId}/pages": {
       "get": {
-        "tags": [
-          "CBX Reader"
-        ],
+        "tags": ["CBX Reader"],
         "summary": "List pages in a CBX book",
         "description": "Retrieve a list of available page numbers for a CBX book.",
         "operationId": "listPages_1",
@@ -10054,9 +9494,7 @@
     },
     "/api/v1/cbx/{bookId}/page-info": {
       "get": {
-        "tags": [
-          "CBX Reader"
-        ],
+        "tags": ["CBX Reader"],
         "summary": "Get page info for a CBX book",
         "description": "Retrieve page information including display names for a CBX book.",
         "operationId": "getPageInfo",
@@ -10100,9 +9538,7 @@
     },
     "/api/v1/cbx/{bookId}/page-dimensions": {
       "get": {
-        "tags": [
-          "CBX Reader"
-        ],
+        "tags": ["CBX Reader"],
         "summary": "Get page dimensions for a CBX book",
         "description": "Retrieve width, height, and wide flag for each page in a CBX book.",
         "operationId": "getPageDimensions",
@@ -10146,9 +9582,7 @@
     },
     "/api/v1/books": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get all books",
         "description": "Retrieve a list of all books. Optionally include descriptions.",
         "operationId": "getBooks_1",
@@ -10191,9 +9625,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Delete books",
         "description": "Delete one or more books by their IDs. Requires admin or delete permission.",
         "operationId": "deleteBooks",
@@ -10239,9 +9671,7 @@
     },
     "/api/v1/books/{id}/recommendations": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get book recommendations",
         "description": "Get recommended books based on a specific book.",
         "operationId": "getRecommendations",
@@ -10289,9 +9719,7 @@
     },
     "/api/v1/books/{bookId}": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get a book by ID",
         "description": "Retrieve details of a specific book by its ID.",
         "operationId": "getBook_2",
@@ -10343,9 +9771,7 @@
     },
     "/api/v1/books/{bookId}/sidecar": {
       "get": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Get sidecar content",
         "description": "Get the content of the sidecar JSON file for a book",
         "operationId": "getSidecarContent",
@@ -10387,9 +9813,7 @@
     },
     "/api/v1/books/{bookId}/sidecar/status": {
       "get": {
-        "tags": [
-          "Sidecar Metadata"
-        ],
+        "tags": ["Sidecar Metadata"],
         "summary": "Get sidecar sync status",
         "description": "Get the synchronization status between database and sidecar file",
         "operationId": "getSyncStatus",
@@ -10451,9 +9875,7 @@
     },
     "/api/v1/books/{bookId}/files/{fileId}/download": {
       "get": {
-        "tags": [
-          "Book Files"
-        ],
+        "tags": ["Book Files"],
         "summary": "Download additional book file",
         "description": "Download a specific additional file attached to a book.",
         "operationId": "additionalFileDownloadAdditionalFile",
@@ -10493,9 +9915,7 @@
     },
     "/api/v1/books/{bookId}/file-metadata": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get file metadata",
         "description": "Extract embedded metadata from the book file.",
         "operationId": "getFileMetadata",
@@ -10527,9 +9947,7 @@
     },
     "/api/v1/books/{bookId}/download": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Download book",
         "description": "Download the book file. Requires download permission or admin.",
         "operationId": "downloadBook_2",
@@ -10571,9 +9989,7 @@
     },
     "/api/v1/books/{bookId}/download-all": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Download all book files",
         "description": "Download all files for a book as a ZIP archive. For single-file books, downloads the file directly. Requires download permission or admin.",
         "operationId": "downloadAllBookFiles",
@@ -10625,9 +10041,7 @@
     },
     "/api/v1/books/{bookId}/cbx/metadata/comicinfo": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get ComicInfo metadata",
         "description": "Retrieve ComicInfo metadata for a specific book.",
         "operationId": "getComicInfoMetadata",
@@ -10659,9 +10073,7 @@
     },
     "/api/v1/books/page": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get books (paginated)",
         "description": "Retrieve a paginated list of books. Supports sorting via 'sort' parameter (e.g. sort=metadata.title,asc).",
         "operationId": "getBooksPaged",
@@ -10681,9 +10093,7 @@
     },
     "/api/v1/books/metadata/detail/{provider}/{providerItemId}": {
       "get": {
-        "tags": [
-          "Book Metadata"
-        ],
+        "tags": ["Book Metadata"],
         "summary": "Get detailed metadata from provider",
         "description": "Fetch full metadata details for a specific item from a provider. Requires metadata edit permission or admin.",
         "operationId": "getDetailedProviderMetadata",
@@ -10734,9 +10144,7 @@
     },
     "/api/v1/books/batch": {
       "get": {
-        "tags": [
-          "Books"
-        ],
+        "tags": ["Books"],
         "summary": "Get books by IDs",
         "description": "Retrieve multiple books by their IDs. Optionally include descriptions.",
         "operationId": "getBooksByIds",
@@ -10785,9 +10193,7 @@
     },
     "/api/v1/bookmarks/book/{bookId}": {
       "get": {
-        "tags": [
-          "Bookmarks"
-        ],
+        "tags": ["Bookmarks"],
         "summary": "Get bookmarks for a book",
         "description": "Retrieve all bookmarks for a specific book.",
         "operationId": "getBookmarksForBook",
@@ -10822,9 +10228,7 @@
     },
     "/api/v1/bookdrop/notification": {
       "get": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Get bookdrop notification summary",
         "description": "Retrieve a summary of bookdrop file notifications.",
         "operationId": "getSummary",
@@ -10844,9 +10248,7 @@
     },
     "/api/v1/bookdrop/files": {
       "get": {
-        "tags": [
-          "Bookdrop"
-        ],
+        "tags": ["Bookdrop"],
         "summary": "Get bookdrop files by status",
         "description": "Retrieve a paginated list of bookdrop files filtered by status.",
         "operationId": "getFilesByStatus",
@@ -10885,9 +10287,7 @@
     },
     "/api/v1/book-notes/book/{bookId}": {
       "get": {
-        "tags": [
-          "Book Notes"
-        ],
+        "tags": ["Book Notes"],
         "summary": "Get notes for a book",
         "description": "Retrieve all notes for a specific book.",
         "operationId": "getNotesForBook_1",
@@ -10922,9 +10322,7 @@
     },
     "/api/v1/authors": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Get all authors",
         "description": "Retrieve all authors with book counts.",
         "operationId": "getAllAuthors",
@@ -10945,9 +10343,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Delete authors",
         "description": "Delete multiple authors and their associated images.",
         "operationId": "deleteAuthors",
@@ -10974,9 +10370,7 @@
     },
     "/api/v1/authors/{authorId}/search-photos": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Search author photos",
         "description": "Search for author photos using DuckDuckGo image search.",
         "operationId": "searchAuthorPhotos",
@@ -11020,9 +10414,7 @@
     },
     "/api/v1/authors/{authorId}/search-metadata": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Search author metadata",
         "description": "Search external providers for author metadata candidates.",
         "operationId": "searchAuthorMetadata",
@@ -11085,9 +10477,7 @@
     },
     "/api/v1/authors/by-name": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Find author by name",
         "description": "Find an author by exact name (case-insensitive).",
         "operationId": "getAuthorByName",
@@ -11118,9 +10508,7 @@
     },
     "/api/v1/authors/book/{bookId}": {
       "get": {
-        "tags": [
-          "Authors"
-        ],
+        "tags": ["Authors"],
         "summary": "Get authors by book ID",
         "description": "Retrieve a list of authors for a specific book.",
         "operationId": "getAuthorsByBookId",
@@ -11155,9 +10543,7 @@
     },
     "/api/v1/auth/remote": {
       "get": {
-        "tags": [
-          "Authentication"
-        ],
+        "tags": ["Authentication"],
         "summary": "Remote login",
         "description": "Authenticate a user using remote authentication headers.",
         "operationId": "loginRemote",
@@ -11198,9 +10584,7 @@
     },
     "/api/v1/auth/oidc/state": {
       "get": {
-        "tags": [
-          "OIDC Authentication"
-        ],
+        "tags": ["OIDC Authentication"],
         "summary": "Generate OIDC state",
         "description": "Generate a one-time state value for initiating an OIDC authentication flow.",
         "operationId": "oidcGenerateState",
@@ -11223,9 +10607,7 @@
     },
     "/api/v1/auth/oidc/redirect": {
       "get": {
-        "tags": [
-          "OIDC Authentication"
-        ],
+        "tags": ["OIDC Authentication"],
         "summary": "Handle OIDC redirect callback",
         "description": "Handle redirect-based OIDC callback and redirect back to the app with token information.",
         "operationId": "oidcHandleRedirect",
@@ -11288,9 +10670,7 @@
     },
     "/api/v1/audit-logs": {
       "get": {
-        "tags": [
-          "Audit Logs"
-        ],
+        "tags": ["Audit Logs"],
         "summary": "Get audit logs",
         "description": "Retrieve paginated audit logs with optional filters. Requires admin.",
         "operationId": "getAuditLogs",
@@ -11432,9 +10812,7 @@
     },
     "/api/v1/audit-logs/usernames": {
       "get": {
-        "tags": [
-          "Audit Logs"
-        ],
+        "tags": ["Audit Logs"],
         "summary": "Get distinct usernames",
         "description": "Retrieve distinct usernames from audit logs for filtering.",
         "operationId": "getDistinctUsernames",
@@ -11457,9 +10835,7 @@
     },
     "/api/v1/audiobooks/{bookId}/track/{trackIndex}/stream": {
       "get": {
-        "tags": [
-          "Audiobook Reader"
-        ],
+        "tags": ["Audiobook Reader"],
         "summary": "Stream specific track",
         "description": "Stream a specific track from a folder-based audiobook.",
         "operationId": "streamTrack",
@@ -11509,9 +10885,7 @@
     },
     "/api/v1/audiobooks/{bookId}/stream": {
       "get": {
-        "tags": [
-          "Audiobook Reader"
-        ],
+        "tags": ["Audiobook Reader"],
         "summary": "Stream audiobook audio",
         "description": "Stream the audiobook audio file with HTTP Range support for seeking. Uses token query parameter for authentication to support HTML5 audio element.",
         "operationId": "streamAudiobook",
@@ -11561,9 +10935,7 @@
     },
     "/api/v1/audiobooks/{bookId}/info": {
       "get": {
-        "tags": [
-          "Audiobook Reader"
-        ],
+        "tags": ["Audiobook Reader"],
         "summary": "Get audiobook info",
         "description": "Retrieve metadata including duration, chapters/tracks, and audio details for an audiobook.",
         "operationId": "getAudiobookInfo",
@@ -11604,9 +10976,7 @@
     },
     "/api/v1/audiobooks/{bookId}/cover": {
       "get": {
-        "tags": [
-          "Audiobook Reader"
-        ],
+        "tags": ["Audiobook Reader"],
         "summary": "Get embedded cover art",
         "description": "Extract and return the embedded cover art from the audiobook file. Uses token query parameter for authentication.",
         "operationId": "getEmbeddedCover",
@@ -11659,9 +11029,7 @@
     },
     "/api/v1/app/users/me": {
       "get": {
-        "tags": [
-          "App Users"
-        ],
+        "tags": ["App Users"],
         "summary": "Get current app user",
         "description": "Retrieve current user flags and capability information used by the app experience.",
         "operationId": "appGetCurrentUser",
@@ -11681,9 +11049,7 @@
     },
     "/api/v1/app/shelves": {
       "get": {
-        "tags": [
-          "App Shelves"
-        ],
+        "tags": ["App Shelves"],
         "summary": "List app shelves",
         "description": "Retrieve all regular shelves visible to the current app user.",
         "operationId": "appGetShelves",
@@ -11706,9 +11072,7 @@
     },
     "/api/v1/app/shelves/magic": {
       "get": {
-        "tags": [
-          "App Shelves"
-        ],
+        "tags": ["App Shelves"],
         "summary": "List app magic shelves",
         "description": "Retrieve all magic shelves visible to the current app user.",
         "operationId": "appGetMagicShelves",
@@ -11731,9 +11095,7 @@
     },
     "/api/v1/app/shelves/magic/{magicShelfId}/books": {
       "get": {
-        "tags": [
-          "App Shelves"
-        ],
+        "tags": ["App Shelves"],
         "summary": "List books in app magic shelf",
         "description": "Retrieve paginated books contained in a specific magic shelf for the app.",
         "operationId": "appGetBooksByMagicShelf",
@@ -11784,9 +11146,7 @@
     },
     "/api/v1/app/series": {
       "get": {
-        "tags": [
-          "App Series"
-        ],
+        "tags": ["App Series"],
         "summary": "List app series",
         "description": "Retrieve paginated series for the app with optional filtering and sorting.",
         "operationId": "appGetSeries",
@@ -11871,9 +11231,7 @@
     },
     "/api/v1/app/series/{seriesName}/books": {
       "get": {
-        "tags": [
-          "App Series"
-        ],
+        "tags": ["App Series"],
         "summary": "List books in app series",
         "description": "Retrieve paginated books belonging to a specific series for the app.",
         "operationId": "appGetSeriesBooks",
@@ -11950,9 +11308,7 @@
     },
     "/api/v1/app/notebook/books": {
       "get": {
-        "tags": [
-          "App Notebook"
-        ],
+        "tags": ["App Notebook"],
         "summary": "List notebook books",
         "description": "Retrieve paginated books that contain notebook entries in the app.",
         "operationId": "appGetBooksWithAnnotations",
@@ -12002,9 +11358,7 @@
     },
     "/api/v1/app/notebook/books/{bookId}/entries": {
       "get": {
-        "tags": [
-          "App Notebook"
-        ],
+        "tags": ["App Notebook"],
         "summary": "List notebook entries for book",
         "description": "Retrieve paginated notebook entries for a specific book in the app.",
         "operationId": "appGetEntriesForBook",
@@ -12084,9 +11438,7 @@
     },
     "/api/v1/app/libraries": {
       "get": {
-        "tags": [
-          "App Libraries"
-        ],
+        "tags": ["App Libraries"],
         "summary": "List app libraries",
         "description": "Retrieve libraries visible to the current app user, including per-library book counts.",
         "operationId": "appGetLibraries",
@@ -12109,9 +11461,7 @@
     },
     "/api/v1/app/filter-options": {
       "get": {
-        "tags": [
-          "App Filters"
-        ],
+        "tags": ["App Filters"],
         "summary": "Get app filter options",
         "description": "Retrieve available filter values for app book browsing.",
         "operationId": "appGetFilterOptions",
@@ -12160,9 +11510,7 @@
     },
     "/api/v1/app/books": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "List app books",
         "description": "Retrieve paginated books for the app with optional filtering and sorting.",
         "operationId": "appGetBooks",
@@ -12192,9 +11540,7 @@
     },
     "/api/v1/app/books/{bookId}": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get app book details",
         "description": "Retrieve detailed app-facing information for a single book.",
         "operationId": "appGetBookDetail",
@@ -12225,9 +11571,7 @@
     },
     "/api/v1/app/books/search": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Search app books",
         "description": "Search books in the app catalog using a free-text query.",
         "operationId": "appSearchBooks",
@@ -12277,9 +11621,7 @@
     },
     "/api/v1/app/books/recently-scanned": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get recently scanned books",
         "description": "Retrieve recently scanned books for the app home experience.",
         "operationId": "appGetRecentlyScanned",
@@ -12314,9 +11656,7 @@
     },
     "/api/v1/app/books/recently-added": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get recently added books",
         "description": "Retrieve recently added books for the app home experience.",
         "operationId": "appGetRecentlyAdded",
@@ -12351,9 +11691,7 @@
     },
     "/api/v1/app/books/random": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get random app books",
         "description": "Retrieve a paginated random selection of books for discovery in the app.",
         "operationId": "appGetRandomBooks",
@@ -12404,9 +11742,7 @@
     },
     "/api/v1/app/books/ids": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get all book IDs matching filters",
         "description": "Return all book IDs that match the given filters without pagination. Useful for bulk selection.",
         "operationId": "appGetAllBookIds",
@@ -12440,9 +11776,7 @@
     },
     "/api/v1/app/books/continue-reading": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get continue reading books",
         "description": "Retrieve books currently in progress for reading in the app.",
         "operationId": "appGetContinueReading",
@@ -12477,9 +11811,7 @@
     },
     "/api/v1/app/books/continue-listening": {
       "get": {
-        "tags": [
-          "App Books"
-        ],
+        "tags": ["App Books"],
         "summary": "Get continue listening books",
         "description": "Retrieve audiobooks currently in progress for listening in the app.",
         "operationId": "appGetContinueListening",
@@ -12514,9 +11846,7 @@
     },
     "/api/v1/app/authors": {
       "get": {
-        "tags": [
-          "App Authors"
-        ],
+        "tags": ["App Authors"],
         "summary": "List app authors",
         "description": "Retrieve paginated authors for the app with optional filtering and sorting.",
         "operationId": "appGetAuthors",
@@ -12601,9 +11931,7 @@
     },
     "/api/v1/app/authors/{authorId}": {
       "get": {
-        "tags": [
-          "App Authors"
-        ],
+        "tags": ["App Authors"],
         "summary": "Get app author details",
         "description": "Retrieve detailed app-facing information for a single author.",
         "operationId": "appGetAuthorDetail",
@@ -12634,9 +11962,7 @@
     },
     "/api/v1/annotations/book/{bookId}": {
       "get": {
-        "tags": [
-          "Annotations"
-        ],
+        "tags": ["Annotations"],
         "summary": "Get annotations for a book",
         "description": "Retrieve all annotations for a specific book.",
         "operationId": "getAnnotationsForBook",
@@ -12671,9 +11997,7 @@
     },
     "/api/metadata/tasks/{taskId}": {
       "get": {
-        "tags": [
-          "Metadata Tasks"
-        ],
+        "tags": ["Metadata Tasks"],
         "summary": "Get metadata task with proposals",
         "description": "Retrieve a metadata task and its proposals by task ID. Requires metadata edit permission or admin.",
         "operationId": "getTaskWithProposals",
@@ -12702,9 +12026,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Metadata Tasks"
-        ],
+        "tags": ["Metadata Tasks"],
         "summary": "Delete a metadata task",
         "description": "Delete a metadata task and its proposals by task ID. Requires metadata edit permission or admin.",
         "operationId": "deleteTask",
@@ -12728,9 +12050,7 @@
     },
     "/api/metadata/tasks/active": {
       "get": {
-        "tags": [
-          "Metadata Tasks"
-        ],
+        "tags": ["Metadata Tasks"],
         "summary": "Get active metadata tasks",
         "description": "Retrieve all active metadata batch tasks. Requires metadata edit permission or admin.",
         "operationId": "getActiveTasks",
@@ -12753,9 +12073,7 @@
     },
     "/api/magic-shelves/{id}": {
       "get": {
-        "tags": [
-          "Magic Shelves"
-        ],
+        "tags": ["Magic Shelves"],
         "summary": "Get a magic shelf by ID",
         "description": "Retrieve a specific magic shelf by its ID.",
         "operationId": "getShelf_1",
@@ -12785,9 +12103,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Magic Shelves"
-        ],
+        "tags": ["Magic Shelves"],
         "summary": "Delete a magic shelf",
         "description": "Delete a specific magic shelf by its ID.",
         "operationId": "deleteShelf_1",
@@ -12812,9 +12128,7 @@
     },
     "/api/koreader/users/auth": {
       "get": {
-        "tags": [
-          "KoReader"
-        ],
+        "tags": ["KoReader"],
         "summary": "Authorize KoReader user",
         "description": "Authorize a user for KoReader sync.",
         "operationId": "authorizeUser",
@@ -12837,9 +12151,7 @@
     },
     "/api/koreader/syncs/progress/{bookHash}": {
       "get": {
-        "tags": [
-          "KoReader"
-        ],
+        "tags": ["KoReader"],
         "summary": "Get KoReader progress",
         "description": "Retrieve reading progress for a book by its hash.",
         "operationId": "getProgress",
@@ -12870,9 +12182,7 @@
     },
     "/api/kobo/{token}/v1/user/profile": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get user profile",
         "description": "Get Kobo user configuration.",
         "operationId": "getUserProfile",
@@ -12892,9 +12202,7 @@
     },
     "/api/kobo/{token}/v1/library/{bookId}/metadata": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get book metadata",
         "description": "Retrieve metadata for a book in the Kobo library.",
         "operationId": "getBookMetadata",
@@ -12925,9 +12233,7 @@
     },
     "/api/kobo/{token}/v1/library/sync": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Sync Kobo library",
         "description": "Sync the user's Kobo library.",
         "operationId": "syncLibrary",
@@ -12950,9 +12256,7 @@
     },
     "/api/kobo/{token}/v1/initialization": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Initialize Kobo resources",
         "description": "Initialize Kobo resources for the device.",
         "operationId": "initialization",
@@ -12972,9 +12276,7 @@
     },
     "/api/kobo/{token}/v1/deals": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get Kobo Deals",
         "description": "Get promotional deals on Kobo entitlements.",
         "operationId": "getDeals",
@@ -12994,9 +12296,7 @@
     },
     "/api/kobo/{token}/v1/books/{imageId}/thumbnail/{width}/{height}/{isGreyscale}/image.jpg": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get book thumbnail",
         "description": "Retrieve the thumbnail image for a local book.",
         "operationId": "getThumbnail",
@@ -13068,9 +12368,7 @@
     },
     "/api/kobo/{token}/v1/books/{imageId}/thumbnail/{width}/{height}/{quality}/{isGreyscale}/image.jpg": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get book thumbnail",
         "description": "Retrieve the thumbnail image for a local book.",
         "operationId": "getThumbnail_1",
@@ -13142,9 +12440,7 @@
     },
     "/api/kobo/{token}/v1/books/{imageId}/{version}/thumbnail/{width}/{height}/{isGreyscale}/image.jpg": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get book thumbnail",
         "description": "Retrieve the thumbnail image for a local book.",
         "operationId": "getThumbnail_2",
@@ -13216,9 +12512,7 @@
     },
     "/api/kobo/{token}/v1/books/{imageId}/{version}/thumbnail/{width}/{height}/{quality}/{isGreyscale}/image.jpg": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Get book thumbnail",
         "description": "Retrieve the thumbnail image for a local book.",
         "operationId": "getThumbnail_3",
@@ -13290,9 +12584,7 @@
     },
     "/api/kobo/{token}/v1/books/{bookId}/download": {
       "get": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Download Kobo book",
         "description": "Download a book from the Kobo library.",
         "operationId": "downloadBook_3",
@@ -13316,9 +12608,7 @@
     },
     "/api/v1/users/{userId}/content-restrictions/{restrictionId}": {
       "delete": {
-        "tags": [
-          "Content Restrictions"
-        ],
+        "tags": ["Content Restrictions"],
         "summary": "Delete content restriction",
         "description": "Delete a specific content restriction",
         "operationId": "deleteRestriction",
@@ -13359,9 +12649,7 @@
     },
     "/api/v1/tasks/{taskId}/cancel": {
       "delete": {
-        "tags": [
-          "Tasks"
-        ],
+        "tags": ["Tasks"],
         "summary": "Cancel task",
         "description": "Cancel an in-progress task by task ID.",
         "operationId": "taskCancelTask",
@@ -13391,9 +12679,7 @@
     },
     "/api/v1/reviews/{id}": {
       "delete": {
-        "tags": [
-          "Book Reviews"
-        ],
+        "tags": ["Book Reviews"],
         "summary": "Delete a review",
         "description": "Delete a specific review by its ID. Requires metadata edit permission or admin.",
         "operationId": "delete",
@@ -13418,9 +12704,7 @@
     },
     "/api/v1/icons/{svgName}": {
       "delete": {
-        "tags": [
-          "Icons"
-        ],
+        "tags": ["Icons"],
         "summary": "Delete an SVG icon",
         "description": "Deletes an SVG icon by its name.",
         "operationId": "deleteSvgIcon",
@@ -13451,9 +12735,7 @@
     },
     "/api/v1/custom-fonts/{fontId}": {
       "delete": {
-        "tags": [
-          "Custom Fonts"
-        ],
+        "tags": ["Custom Fonts"],
         "summary": "Delete a custom font",
         "description": "Delete a custom font file and database record",
         "operationId": "deleteFont",
@@ -13480,9 +12762,7 @@
     },
     "/api/v1/books/{bookId}/files/{fileId}": {
       "delete": {
-        "tags": [
-          "Book Files"
-        ],
+        "tags": ["Book Files"],
         "summary": "Delete additional book file",
         "description": "Delete a specific additional file attached to a book.",
         "operationId": "additionalFileDeleteAdditionalFile",
@@ -13515,9 +12795,7 @@
     },
     "/api/v1/book-notes/{noteId}": {
       "delete": {
-        "tags": [
-          "Book Notes"
-        ],
+        "tags": ["Book Notes"],
         "summary": "Delete a note",
         "description": "Delete a specific note by its ID.",
         "operationId": "deleteNote_1",
@@ -13542,9 +12820,7 @@
     },
     "/api/kobo/{token}/v1/library/{bookId}": {
       "delete": {
-        "tags": [
-          "Kobo Integration"
-        ],
+        "tags": ["Kobo Integration"],
         "summary": "Delete book from Kobo library",
         "description": "Delete a book from the user's Kobo library.",
         "operationId": "deleteBookFromLibrary",
@@ -13738,20 +13014,11 @@
           },
           "restrictionType": {
             "type": "string",
-            "enum": [
-              "CATEGORY",
-              "TAG",
-              "MOOD",
-              "AGE_RATING",
-              "CONTENT_RATING"
-            ]
+            "enum": ["CATEGORY", "TAG", "MOOD", "AGE_RATING", "CONTENT_RATING"]
           },
           "mode": {
             "type": "string",
-            "enum": [
-              "EXCLUDE",
-              "ALLOW_ONLY"
-            ]
+            "enum": ["EXCLUDE", "ALLOW_ONLY"]
           },
           "value": {
             "type": "string"
@@ -13903,11 +13170,7 @@
           },
           "provisioningMethod": {
             "type": "string",
-            "enum": [
-              "LOCAL",
-              "OIDC",
-              "REMOTE"
-            ]
+            "enum": ["LOCAL", "OIDC", "REMOTE"]
           },
           "assignedLibraries": {
             "type": "array",
@@ -13931,17 +13194,11 @@
         "properties": {
           "pageSpread": {
             "type": "string",
-            "enum": [
-              "EVEN",
-              "ODD"
-            ]
+            "enum": ["EVEN", "ODD"]
           },
           "pageViewMode": {
             "type": "string",
-            "enum": [
-              "SINGLE_PAGE",
-              "TWO_PAGE"
-            ]
+            "enum": ["SINGLE_PAGE", "TWO_PAGE"]
           },
           "fitMode": {
             "type": "string",
@@ -13955,19 +13212,11 @@
           },
           "scrollMode": {
             "type": "string",
-            "enum": [
-              "PAGINATED",
-              "INFINITE",
-              "LONG_STRIP"
-            ]
+            "enum": ["PAGINATED", "INFINITE", "LONG_STRIP"]
           },
           "backgroundColor": {
             "type": "string",
-            "enum": [
-              "GRAY",
-              "BLACK",
-              "WHITE"
-            ]
+            "enum": ["GRAY", "BLACK", "WHITE"]
           },
           "stripMaxWidthPercent": {
             "type": "integer",
@@ -14124,10 +13373,7 @@
           },
           "iconType": {
             "type": "string",
-            "enum": [
-              "LUCIDE",
-              "CUSTOM_SVG"
-            ]
+            "enum": ["LUCIDE", "CUSTOM_SVG"]
           },
           "fileNamingPattern": {
             "type": "string"
@@ -14145,39 +13391,19 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           "allowedFormats": {
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           "organizationMode": {
             "type": "string",
-            "enum": [
-              "BOOK_PER_FILE",
-              "BOOK_PER_FOLDER",
-              "AUTO_DETECT"
-            ]
+            "enum": ["BOOK_PER_FILE", "BOOK_PER_FOLDER", "AUTO_DETECT"]
           },
           "metadataSource": {
             "type": "string",
@@ -14212,25 +13438,15 @@
         "properties": {
           "pageSpread": {
             "type": "string",
-            "enum": [
-              "EVEN",
-              "ODD"
-            ]
+            "enum": ["EVEN", "ODD"]
           },
           "pageViewMode": {
             "type": "string",
-            "enum": [
-              "SINGLE_PAGE",
-              "TWO_PAGE"
-            ]
+            "enum": ["SINGLE_PAGE", "TWO_PAGE"]
           },
           "backgroundColor": {
             "type": "string",
-            "enum": [
-              "GRAY",
-              "BLACK",
-              "WHITE"
-            ]
+            "enum": ["GRAY", "BLACK", "WHITE"]
           },
           "fitMode": {
             "type": "string",
@@ -14244,10 +13460,7 @@
           },
           "scrollMode": {
             "type": "string",
-            "enum": [
-              "PAGINATED",
-              "INFINITE"
-            ]
+            "enum": ["PAGINATED", "INFINITE"]
           }
         }
       },
@@ -14315,31 +13528,19 @@
         "properties": {
           "pdf": {
             "type": "string",
-            "enum": [
-              "Global",
-              "Individual"
-            ]
+            "enum": ["Global", "Individual"]
           },
           "epub": {
             "type": "string",
-            "enum": [
-              "Global",
-              "Individual"
-            ]
+            "enum": ["Global", "Individual"]
           },
           "cbx": {
             "type": "string",
-            "enum": [
-              "Global",
-              "Individual"
-            ]
+            "enum": ["Global", "Individual"]
           },
           "newPdf": {
             "type": "string",
-            "enum": [
-              "Global",
-              "Individual"
-            ]
+            "enum": ["Global", "Individual"]
           }
         }
       },
@@ -14397,10 +13598,7 @@
           },
           "direction": {
             "type": "string",
-            "enum": [
-              "ASCENDING",
-              "DESCENDING"
-            ]
+            "enum": ["ASCENDING", "DESCENDING"]
           }
         }
       },
@@ -14672,18 +13870,13 @@
           },
           "iconType": {
             "type": "string",
-            "enum": [
-              "LUCIDE",
-              "CUSTOM_SVG"
-            ]
+            "enum": ["LUCIDE", "CUSTOM_SVG"]
           },
           "publicShelf": {
             "type": "boolean"
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "Shelf": {
         "type": "object",
@@ -14700,10 +13893,7 @@
           },
           "iconType": {
             "type": "string",
-            "enum": [
-              "LUCIDE",
-              "CUSTOM_SVG"
-            ]
+            "enum": ["LUCIDE", "CUSTOM_SVG"]
           },
           "sort": {
             "$ref": "#/components/schemas/Sort"
@@ -14743,10 +13933,7 @@
           },
           "iconType": {
             "type": "string",
-            "enum": [
-              "LUCIDE",
-              "CUSTOM_SVG"
-            ]
+            "enum": ["LUCIDE", "CUSTOM_SVG"]
           },
           "paths": {
             "type": "array",
@@ -14762,30 +13949,14 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           "allowedFormats": {
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           "metadataSource": {
@@ -14800,17 +13971,10 @@
           },
           "organizationMode": {
             "type": "string",
-            "enum": [
-              "BOOK_PER_FILE",
-              "BOOK_PER_FOLDER",
-              "AUTO_DETECT"
-            ]
+            "enum": ["BOOK_PER_FILE", "BOOK_PER_FOLDER", "AUTO_DETECT"]
           }
         },
-        "required": [
-          "name",
-          "paths"
-        ]
+        "required": ["name", "paths"]
       },
       "KoreaderUser": {
         "type": "object",
@@ -14904,10 +14068,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "email",
-          "name"
-        ]
+        "required": ["email", "name"]
       },
       "EmailRecipientV2": {
         "type": "object",
@@ -15033,17 +14194,11 @@
           },
           "pageSpread": {
             "type": "string",
-            "enum": [
-              "EVEN",
-              "ODD"
-            ]
+            "enum": ["EVEN", "ODD"]
           },
           "pageViewMode": {
             "type": "string",
-            "enum": [
-              "SINGLE_PAGE",
-              "TWO_PAGE"
-            ]
+            "enum": ["SINGLE_PAGE", "TWO_PAGE"]
           },
           "fitMode": {
             "type": "string",
@@ -15057,19 +14212,11 @@
           },
           "scrollMode": {
             "type": "string",
-            "enum": [
-              "PAGINATED",
-              "INFINITE",
-              "LONG_STRIP"
-            ]
+            "enum": ["PAGINATED", "INFINITE", "LONG_STRIP"]
           },
           "backgroundColor": {
             "type": "string",
-            "enum": [
-              "GRAY",
-              "BLACK",
-              "WHITE"
-            ]
+            "enum": ["GRAY", "BLACK", "WHITE"]
           }
         }
       },
@@ -15137,25 +14284,15 @@
           },
           "pageSpread": {
             "type": "string",
-            "enum": [
-              "EVEN",
-              "ODD"
-            ]
+            "enum": ["EVEN", "ODD"]
           },
           "pageViewMode": {
             "type": "string",
-            "enum": [
-              "SINGLE_PAGE",
-              "TWO_PAGE"
-            ]
+            "enum": ["SINGLE_PAGE", "TWO_PAGE"]
           },
           "backgroundColor": {
             "type": "string",
-            "enum": [
-              "GRAY",
-              "BLACK",
-              "WHITE"
-            ]
+            "enum": ["GRAY", "BLACK", "WHITE"]
           },
           "fitMode": {
             "type": "string",
@@ -15169,10 +14306,7 @@
           },
           "scrollMode": {
             "type": "string",
-            "enum": [
-              "PAGINATED",
-              "INFINITE"
-            ]
+            "enum": ["PAGINATED", "INFINITE"]
           }
         }
       },
@@ -16053,10 +15187,7 @@
           },
           "lock": {
             "type": "string",
-            "enum": [
-              "LOCK",
-              "UNLOCK"
-            ]
+            "enum": ["LOCK", "UNLOCK"]
           }
         }
       },
@@ -16383,9 +15514,7 @@
             ]
           }
         },
-        "required": [
-          "status"
-        ]
+        "required": ["status"]
       },
       "UpdateRatingRequest": {
         "type": "object",
@@ -16418,10 +15547,7 @@
             "format": "float"
           }
         },
-        "required": [
-          "percentage",
-          "positionMs"
-        ]
+        "required": ["percentage", "positionMs"]
       },
       "BookFileProgress": {
         "type": "object",
@@ -16448,10 +15574,7 @@
             "format": "float"
           }
         },
-        "required": [
-          "bookFileId",
-          "progressPercent"
-        ]
+        "required": ["bookFileId", "progressPercent"]
       },
       "CbxProgress": {
         "type": "object",
@@ -16465,10 +15588,7 @@
             "format": "float"
           }
         },
-        "required": [
-          "page",
-          "percentage"
-        ]
+        "required": ["page", "percentage"]
       },
       "EpubProgress": {
         "type": "object",
@@ -16491,9 +15611,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "percentage"
-        ]
+        "required": ["percentage"]
       },
       "PdfProgress": {
         "type": "object",
@@ -16507,10 +15625,7 @@
             "format": "float"
           }
         },
-        "required": [
-          "page",
-          "percentage"
-        ]
+        "required": ["page", "percentage"]
       },
       "UpdateProgressRequest": {
         "type": "object",
@@ -16757,11 +15872,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "ReadyToRead",
-              "Finished",
-              "Reading"
-            ]
+            "enum": ["ReadyToRead", "Finished", "Reading"]
           },
           "timesStartedReading": {
             "type": "integer",
@@ -16863,11 +15974,7 @@
             "minLength": 0
           }
         },
-        "required": [
-          "bookId",
-          "cfi",
-          "noteContent"
-        ]
+        "required": ["bookId", "cfi", "noteContent"]
       },
       "TaskCreateRequest": {
         "type": "object",
@@ -16946,12 +16053,7 @@
             "minLength": 8
           }
         },
-        "required": [
-          "email",
-          "name",
-          "password",
-          "username"
-        ]
+        "required": ["email", "name", "password", "username"]
       },
       "ClaimMapping": {
         "type": "object",
@@ -17001,12 +16103,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "PASS",
-              "FAIL",
-              "WARN",
-              "SKIP"
-            ]
+            "enum": ["PASS", "FAIL", "WARN", "SKIP"]
           },
           "message": {
             "type": "string"
@@ -17036,15 +16133,7 @@
           },
           "bookType": {
             "type": "string",
-            "enum": [
-              "PDF",
-              "EPUB",
-              "CBX",
-              "FB2",
-              "MOBI",
-              "AZW3",
-              "AUDIOBOOK"
-            ]
+            "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
           },
           "startTime": {
             "type": "string",
@@ -17080,12 +16169,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "bookId",
-          "durationSeconds",
-          "endTime",
-          "startTime"
-        ]
+        "required": ["bookId", "durationSeconds", "endTime", "startTime"]
       },
       "SvgIconCreateRequest": {
         "type": "object",
@@ -17102,10 +16186,7 @@
             "minLength": 0
           }
         },
-        "required": [
-          "svgData",
-          "svgName"
-        ]
+        "required": ["svgData", "svgName"]
       },
       "SvgIconBatchRequest": {
         "type": "object",
@@ -17118,9 +16199,7 @@
             "minItems": 1
           }
         },
-        "required": [
-          "icons"
-        ]
+        "required": ["icons"]
       },
       "IconSaveResult": {
         "type": "object",
@@ -17279,24 +16358,11 @@
           },
           "bookType": {
             "type": "string",
-            "enum": [
-              "PDF",
-              "EPUB",
-              "CBX",
-              "FB2",
-              "MOBI",
-              "AZW3",
-              "AUDIOBOOK"
-            ]
+            "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
           },
           "archiveType": {
             "type": "string",
-            "enum": [
-              "ZIP",
-              "RAR",
-              "SEVEN_ZIP",
-              "UNKNOWN"
-            ]
+            "enum": ["ZIP", "RAR", "SEVEN_ZIP", "UNKNOWN"]
           },
           "fileSizeKb": {
             "type": "integer",
@@ -17393,11 +16459,7 @@
             "format": "int64"
           }
         },
-        "required": [
-          "bookId",
-          "providerId",
-          "recipientId"
-        ]
+        "required": ["bookId", "providerId", "recipientId"]
       },
       "CustomFontDto": {
         "type": "object",
@@ -17414,12 +16476,7 @@
           },
           "format": {
             "type": "string",
-            "enum": [
-              "TTF",
-              "OTF",
-              "WOFF",
-              "WOFF2"
-            ]
+            "enum": ["TTF", "OTF", "WOFF", "WOFF2"]
           },
           "fileSize": {
             "type": "integer",
@@ -17447,9 +16504,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "sourceBookIds"
-        ]
+        "required": ["sourceBookIds"]
       },
       "AttachBookFileResponse": {
         "type": "object",
@@ -17558,10 +16613,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "bookIds",
-          "status"
-        ]
+        "required": ["bookIds", "status"]
       },
       "BookStatusUpdateResponse": {
         "type": "object",
@@ -17659,9 +16711,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "bookId"
-        ]
+        "required": ["bookId"]
       },
       "CreatePhysicalBookRequest": {
         "type": "object",
@@ -17709,9 +16759,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "libraryId"
-        ]
+        "required": ["libraryId"]
       },
       "DeleteMetadataRequest": {
         "type": "object",
@@ -17737,10 +16785,7 @@
             "minItems": 1
           }
         },
-        "required": [
-          "metadataType",
-          "valuesToDelete"
-        ]
+        "required": ["metadataType", "valuesToDelete"]
       },
       "MergeMetadataRequest": {
         "type": "object",
@@ -17804,9 +16849,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "libraryId"
-        ]
+        "required": ["libraryId"]
       },
       "DuplicateGroup": {
         "type": "object",
@@ -17840,9 +16883,7 @@
             "uniqueItems": true
           }
         },
-        "required": [
-          "bookIds"
-        ]
+        "required": ["bookIds"]
       },
       "CreateBookMarkRequest": {
         "type": "object",
@@ -17878,9 +16919,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "bookId"
-        ]
+        "required": ["bookId"]
       },
       "BookdropFinalizeFile": {
         "type": "object",
@@ -18002,9 +17041,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "pattern"
-        ]
+        "required": ["pattern"]
       },
       "BookdropPatternExtractResult": {
         "type": "object",
@@ -18108,10 +17145,7 @@
             }
           }
         },
-        "required": [
-          "enabledFields",
-          "fields"
-        ]
+        "required": ["enabledFields", "fields"]
       },
       "BookdropBulkEditResult": {
         "type": "object",
@@ -18150,10 +17184,7 @@
             "minLength": 1
           }
         },
-        "required": [
-          "bookId",
-          "content"
-        ]
+        "required": ["bookId", "content"]
       },
       "BookNote": {
         "type": "object",
@@ -18191,9 +17222,7 @@
         "properties": {
           "source": {
             "type": "string",
-            "enum": [
-              "AUDNEXUS"
-            ]
+            "enum": ["AUDNEXUS"]
           },
           "asin": {
             "type": "string"
@@ -18337,12 +17366,7 @@
             "uniqueItems": true
           }
         },
-        "required": [
-          "email",
-          "name",
-          "password",
-          "username"
-        ]
+        "required": ["email", "name", "password", "username"]
       },
       "RefreshTokenRequest": {
         "type": "object",
@@ -18353,9 +17377,7 @@
             "minLength": 1
           }
         },
-        "required": [
-          "refreshToken"
-        ]
+        "required": ["refreshToken"]
       },
       "AccessTokenDto": {
         "type": "object",
@@ -18399,13 +17421,7 @@
             "minLength": 1
           }
         },
-        "required": [
-          "code",
-          "codeVerifier",
-          "nonce",
-          "redirectUri",
-          "state"
-        ]
+        "required": ["code", "codeVerifier", "nonce", "redirectUri", "state"]
       },
       "LogoutRequest": {
         "type": "object",
@@ -18436,10 +17452,7 @@
             "minLength": 1
           }
         },
-        "required": [
-          "password",
-          "username"
-        ]
+        "required": ["password", "username"]
       },
       "CreateAnnotationRequest": {
         "type": "object",
@@ -18478,11 +17491,7 @@
             "minLength": 0
           }
         },
-        "required": [
-          "bookId",
-          "cfi",
-          "text"
-        ]
+        "required": ["bookId", "cfi", "text"]
       },
       "MagicShelf": {
         "type": "object",
@@ -18504,10 +17513,7 @@
           },
           "iconType": {
             "type": "string",
-            "enum": [
-              "LUCIDE",
-              "CUSTOM_SVG"
-            ]
+            "enum": ["LUCIDE", "CUSTOM_SVG"]
           },
           "filterJson": {
             "type": "string",
@@ -18518,10 +17524,7 @@
             "type": "boolean"
           }
         },
-        "required": [
-          "filterJson",
-          "name"
-        ]
+        "required": ["filterJson", "name"]
       },
       "OpdsUserV2UpdateRequest": {
         "type": "object",
@@ -18542,9 +17545,7 @@
             ]
           }
         },
-        "required": [
-          "sortOrder"
-        ]
+        "required": ["sortOrder"]
       },
       "TaskCronConfigRequest": {
         "type": "object",
@@ -18637,15 +17638,7 @@
           },
           "bookType": {
             "type": "string",
-            "enum": [
-              "PDF",
-              "EPUB",
-              "CBX",
-              "FB2",
-              "MOBI",
-              "AZW3",
-              "AUDIOBOOK"
-            ]
+            "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
           },
           "startDate": {
             "type": "string",
@@ -20092,11 +19085,7 @@
           },
           "replaceMode": {
             "type": "string",
-            "enum": [
-              "REPLACE_ALL",
-              "REPLACE_MISSING",
-              "REPLACE_WHEN_PROVIDED"
-            ]
+            "enum": ["REPLACE_ALL", "REPLACE_MISSING", "REPLACE_WHEN_PROVIDED"]
           },
           "fieldOptions": {
             "$ref": "#/components/schemas/FieldOptions"
@@ -20105,10 +19094,7 @@
             "$ref": "#/components/schemas/EnabledFields"
           }
         },
-        "required": [
-          "enabledFields",
-          "fieldOptions"
-        ]
+        "required": ["enabledFields", "fieldOptions"]
       },
       "OidcAutoProvisionDetails": {
         "type": "object",
@@ -20256,15 +19242,7 @@
           },
           "bookType": {
             "type": "string",
-            "enum": [
-              "PDF",
-              "EPUB",
-              "CBX",
-              "FB2",
-              "MOBI",
-              "AZW3",
-              "AUDIOBOOK"
-            ]
+            "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
           },
           "startTime": {
             "type": "string",
@@ -20893,10 +19871,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "PENDING_REVIEW",
-              "FINALIZED"
-            ]
+            "enum": ["PENDING_REVIEW", "FINALIZED"]
           }
         }
       },
@@ -20939,9 +19914,7 @@
         "properties": {
           "source": {
             "type": "string",
-            "enum": [
-              "AUDNEXUS"
-            ]
+            "enum": ["AUDNEXUS"]
           },
           "asin": {
             "type": "string"
@@ -21959,15 +20932,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "PDF",
-                "EPUB",
-                "CBX",
-                "FB2",
-                "MOBI",
-                "AZW3",
-                "AUDIOBOOK"
-              ]
+              "enum": ["PDF", "EPUB", "CBX", "FB2", "MOBI", "AZW3", "AUDIOBOOK"]
             }
           },
           "paths": {
@@ -22809,11 +21774,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "FETCHED",
-              "ACCEPTED",
-              "REJECTED"
-            ]
+            "enum": ["FETCHED", "ACCEPTED", "REJECTED"]
           },
           "metadataJson": {
             "$ref": "#/components/schemas/BookMetadata"
@@ -22828,12 +21789,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "IN_PROGRESS",
-              "COMPLETED",
-              "ERROR",
-              "CANCELLED"
-            ]
+            "enum": ["IN_PROGRESS", "COMPLETED", "ERROR", "CANCELLED"]
           },
           "completed": {
             "type": "integer",
